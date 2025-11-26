@@ -45,7 +45,7 @@ export default function page() {
               <Image
                 alt="Фотография команды агентства Ozelim"
                 className="rounded-lg w-full"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhZpIBR9A6GBEM7sr_L3W7645KkhhnpE-FqPxUBtvhTiUUb4QVCgNdrSA_clseyCOyvCxQ-OwRl0UEV-UdTAvJ7Cs7qB6V2Dke2S0V-iG7H5QKJSIPmvvoi2BsVNNgkQS65cTuuaDNQvtpFeixafSjYlsTRGrva7_w31AQcbI8cU5CpMGCrxr0YdkimA07X-UZy_2L5zrQGxFWAx9miHYCtoZIaLSamX9vLIJa_mwzudnFxga5SujzcZN-i8gUcyuOMmbQFF4vgJA"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiFE9Sdd0jymYHWXqGTBSe8hqI1mFxOdSTcf9Xpjp641j0h8wXFp55P0myU-RJXutrxou7HGmmxi1rRSPBOwNYXSBcQcvsoVQmopbGkpnZ6EkRAcFceTH44e3uBXA62FOLgcEpzrsrrlgfB9g8aVMWT8Y09kQdIHjQmVaH8zUSJpnHKAzstI76IoIrfkZUORMKCd80BKEW6BEiVbunfVAOSgpqXxWvMGGaFY4bOIs-eAbhYosR38VK7G0-BYuBJG2U8igBzgIcXjBq"
                 width={700}
                 height={450}
                 style={{ width: "100%", height: "auto" }}
@@ -59,7 +59,7 @@ export default function page() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center bg-background-light rounded-lg shadow-lg overflow-hidden">
             <div className="relative w-full md:w-5/12">
-              <div className="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-end p-8 md:bg-opacity-0">
+              <div className="absolute inset-0 bg-opacity-50 flex items-end p-8 md:bg-opacity-0">
                 <div className="bg-gray-800 text-white p-6 rounded-lg md:translate-x-1/2">
                   <h3 className="text-2xl font-bold">Галютина Виктория</h3>
                   <p className="text-gray-300">Директор офиса</p>
@@ -67,8 +67,8 @@ export default function page() {
               </div>
               <Image
                 alt="Фотография директора офиса Виктории Галютиной"
-                className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB09DooN0TJNZt1nsEjIXmgDScTWK-AJoeDq5P8FKkC7Pa0clFgJsvPj67CauCVrXlCCWK-z49_JTdI9hpbeCEfxzQpU-UH04NMRWebI0G2KpTFTsH_uej6Y-LkUPFKqAVwXmc7c7tMARzxMFYuh3m0N8GPj0XBQgwb8UtpuUIzH9qQMmVGkTOw9guqRsYgwENdwfDSezTJVHjd77jZWPoXDmhxMMecml6BYyaR0xU15H79edEGzlD8N3MNow6JI3er8tFfcaxHfVU"
+                className="w-full h-full object-cover rounded-xl"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiFE9Sdd0jymYHWXqGTBSe8hqI1mFxOdSTcf9Xpjp641j0h8wXFp55P0myU-RJXutrxou7HGmmxi1rRSPBOwNYXSBcQcvsoVQmopbGkpnZ6EkRAcFceTH44e3uBXA62FOLgcEpzrsrrlgfB9g8aVMWT8Y09kQdIHjQmVaH8zUSJpnHKAzstI76IoIrfkZUORMKCd80BKEW6BEiVbunfVAOSgpqXxWvMGGaFY4bOIs-eAbhYosR38VK7G0-BYuBJG2U8igBzgIcXjBq"
                 width={550}
                 height={730}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -370,7 +370,7 @@ export default function page() {
                   />
                   <div className="flex flex-wrap items-center gap-4 pt-4">
                     <button
-                      className="bg-background-light text-gray-800 py-3 px-8 rounded-full font-semibold hover:opacity-90 transition-opacity"
+                      className="bg-background-light py-3 px-8 rounded-full font-semibold hover:opacity-90 transition-opacity mx-auto"
                       type="submit"
                     >
                       Позвоните мне
@@ -390,7 +390,7 @@ export default function page() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
                 Или свяжитесь с нами любым удобным Вам способом
               </h2>
-              <div className="flex justify-center gap-4 my-6">
+              <div className="flex flex-col md:flex-row justify-center gap-4 my-6">
                 <a
                   className="border-2 border-gray-300 rounded-full py-3 px-6 font-medium flex items-center gap-2 text-gray-800 hover:bg-gray-100 transition-colors"
                   href="#"
@@ -407,7 +407,7 @@ export default function page() {
                 </a>
               </div>
               <a
-                className="text-4xl font-bold text-gray-800"
+                className="text-3xl md:text-4xl font-bold text-gray-800 whitespace-nowrap"
                 href="tel:+77273107843"
               >
                 +7 727 310 7843
