@@ -56,7 +56,7 @@ export default function page() {
         </div>
       </section>
       <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center bg-background-light rounded-lg shadow-lg overflow-hidden">
             <div className="relative w-full md:w-5/12">
               <div className="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-end p-8 md:bg-opacity-0">
@@ -112,7 +112,7 @@ export default function page() {
         </div>
       </section>
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 items-start">
             <div className="bg-gray-800 text-white p-8 rounded-lg md:sticky md:top-24">
               <h2 className="text-4xl font-bold">Почему мы?</h2>
@@ -223,7 +223,7 @@ export default function page() {
         </div>
       </section>
       <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900">
               Гарантии
@@ -288,7 +288,7 @@ export default function page() {
         </div>
       </section>
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900">
               Способы оплаты
@@ -320,7 +320,7 @@ export default function page() {
         </div>
       </section>
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 bg-gray-800 rounded-lg overflow-hidden text-white">
             <div className="p-8 md:p-12 relative">
               <Image
