@@ -21,6 +21,7 @@ import {
   MessageCircle,
   User,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,12 +40,12 @@ export default function Home() {
               Гарантируем подачу документов в соответствии с законом
             </p>
             <div className="mt-8">
-              <a
+              <Link
                 className="bg-primary font-semibold px-8 py-4 rounded-lg inline-block hover:opacity-90 transition shadow-lg shadow-primary/20 text-white"
-                href="#"
+                href="#section-id1"
               >
                 Бесплатная онлайн-консультация
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative grid grid-cols-2 gap-4">
@@ -502,7 +503,7 @@ export default function Home() {
             </button>
           </div>
         </section>
-        <section className="py-16">
+        <section className="py-16" id='section-id1'>
           <div className="relative bg-primary rounded-2xl p-8 md:p-16 overflow-hidden">
             <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
               <div>
