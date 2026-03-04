@@ -14,7 +14,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="py-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-">
+    <header className="py-2 lg:py-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-">
       <div className="flex justify-between items-center border-b border-slate-200 pb-4 mb-4">
         <div className="flex items-center space-x-8">
           <div className="text-xl font-bold text-slate-800">
@@ -80,13 +80,14 @@ export const Header = () => {
             {/* Telegram */}
             <SendPlaneIcon className="text-xl h-5 w-5" />
           </a>
-          <button className="lg:hidden p-2 rounded-md hover:bg-slate-100">
+          {/* <button className="lg:hidden p-2 rounded-md hover:bg-slate-100">
             <Menu className="text-slate-800 h-6 w-6" />
-          </button>
+          </button> */}
         </div>
       </div>
       <nav className="flex justify-between items-center">
-        <div className="flex items-center space-x-6">
+        <div className="flex flex-col lg:flex-row space-x-6 space-y-3 lg:space-y-0">
+
           {/* <a
           className="flex items-center text-slate-800 font-bold hover:text-primary transition"
           href="#"
@@ -94,54 +95,28 @@ export const Header = () => {
           Помогаем
           <ChevronDown className="text-lg ml-1 h-4 w-4" />
         </a> */}
-          <Link
+          {/* <Link
             className="hidden md:flex items-center text-slate-800 font-bold hover:text-primary transition"
             href="about"
           >
             О компании
-            {/* <ChevronDown className="text-lg ml-1 h-4 w-4" /> */}
+          </Link> */}
+          <Link
+            className="text-slate-800 font-bold hover:text-primary transition"
+            href="about"
+          >
+            Для иностранных граждан
           </Link>
-          {/* <a
-          className="hidden md:block text-slate-800 font-bold hover:text-primary transition"
-          href="#"
-        >
-          Услуги
-        </a> */}
-          {/* <a
-          className="hidden md:block text-slate-800 font-bold hover:text-primary transition"
-          href="#"
-        >
-          Цены
-        </a> */}
-          {/* <a
-          className="hidden md:block text-slate-800 font-bold hover:text-primary transition"
-          href="#"
-        >
-          Акции
-        </a> */}
-          {/* <a
-          className="hidden md:flex items-center text-slate-800 font-bold hover:text-primary transition"
-          href="#"
-        >
-          Информация
-          <ChevronDown className="text-lg ml-1 h-4 w-4" />
-        </a> */}
-          {/* <a
-          className="hidden md:block text-slate-800 font-bold hover:text-primary transition"
-          href="#"
-        >
-          Контакты
-        </a> */}
+          <Link
+            className="text-slate-800 font-bold hover:text-primary transition"
+            href="about"
+          >
+            Для граждан Казахстана
+          </Link>
+
         </div>
         <div className="flex items-center space-x-4">
-          <div className="relative hidden sm:block">
-            <input
-              className="bg-slate-100 border-none rounded-lg py-2 pl-4 pr-10 text-sm focus:ring-2 focus:ring-primary focus:border-transparent"
-              placeholder="Поиск"
-              type="text"
-            />
-            <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 h-5 w-5" />
-          </div>
+
           <a
             className="hidden sm:inline-block whitespace-nowrap px-4 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
             href="#"

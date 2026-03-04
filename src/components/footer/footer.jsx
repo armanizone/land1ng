@@ -179,7 +179,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-200 text-center text-sm text-slate-500">
-            <p>© 2014 - 2025 Ассоциация некоммерческая организация «Ozelim»</p>
+            <p>© 2014 - 2026 Ассоциация некоммерческая организация «Ozelim»</p>
           </div>
         </div>
       </div>

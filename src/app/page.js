@@ -20,16 +20,27 @@ import {
   Eye,
   MessageCircle,
   User,
+  Euro, Building2, Globe,
+  Mail,
+  Hotel,
+  UsersRound,
+  ShieldCheck,
+  Headphones,
+  HeartPulse,
 } from "lucide-react";
+
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <main className="py-16">
+    <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+      <main className="py-8">
+
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+          <span className="inline-block py-1 px-3 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">Ваш надежный гид в Казахстане</span>
+
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mt-4">
               Миграционные услуги для иностранных граждан в Казахстане
             </h1>
             <p className="mt-4 text-lg text-slate-600">
@@ -48,7 +59,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative grid grid-cols-2 gap-4">
+          {/* <div className="relative grid grid-cols-2 gap-4">
             <div className="relative bg-slate-200 p-6 rounded-lg col-span-2 overflow-hidden">
               <div className="absolute inset-0 bg-linear-to-br from-emerald-500/80 to-emerald-700/80 -rotate-12 scale-150" />
               <div className="relative flex items-end h-full">
@@ -126,37 +137,55 @@ export default function Home() {
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="mt-24 relative overflow-hidden">
-          <div className="flex justify-between items-center">
-            <div className="bg-primary p-12 rounded-lg w-full lg:w-1/3">
-              <h2 className="text-4xl font-bold text-white">
-                Акции и специальные предложения
-              </h2>
-            </div>
-            <div className="hidden lg:block relative w-2/3">
+          </div> */}
+
+          <div className="relative grid grid-cols-2 gap-4">
+          <div className="space-y-4">
+            <div className="rounded-2xl overflow-hidden h-64 soft-shadow shadow-lg bg-white">
               <Image
-                alt="Promotional banner showing documents and a flag"
-                className="rounded-lg w-full h-auto object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIwhg6Hgbu2UV8mHtIzjj-MCvoKShBxQtSW6y_FHx6dTA9o_2KGTe5Lq22PTw89eflSp1r6WKhACRUeVG9b-abW0vunCSAp4gy8dvyGaPm2giNPDhoE3etCZlEZe38ksQnxseLPwIB4mUBq0DpjHKN1dclP4P4BglDP9kbqkXGmOUM_jLHieUpNVIkthKibglyf3M90WscbBFjOu4SquoBtg-WDB_56PXorSLEakpyoEZwF8LG0jEbgRyrDPV9g7LvRgUlyhveK40"
-                width={600}
-                height={160}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  objectFit: "cover",
-                  borderRadius: "0.5rem",
-                }}
-                unoptimized
+                alt="Almaty Architecture"
+                className="w-full h-full object-cover"
+                src="/Picture1.jpg"
+                height={200}
+                width={200} 
+                data-alt="Modern Almaty architecture reflecting city life"
+                style={{ objectFit: 'cover' }}
+                priority
               />
             </div>
-            <button className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-slate-100 transition">
-              <ArrowRight className="text-slate-600 h-5 w-5" />
-            </button>
+            <div className="rounded-2xl overflow-hidden h-48 soft-shadow shadow-lg bg-white">
+              <Image
+                alt="Passport Control"
+                className="w-full h-full object-cover"
+                src="/Picture2.jpg"
+                height={200}
+                width={200}
+                data-alt="Officer checking international passport at customs"
+                style={{ objectFit: 'cover' }}
+                priority
+              />
+            </div>
+          </div>
+          <div className="pt-12 space-y-4">
+            <div className="rounded-2xl overflow-hidden h-80 soft-shadow shadow-lg bg-white">
+              <Image
+                alt="Business Consultation"
+                className="w-full h-full object-cover"
+                src="/Picture3.jpg"
+                height={200}
+                width={200}
+                data-alt="Professional meeting between consultants and client"
+                style={{ objectFit: 'cover' }}
+                priority
+              />
+            </div>
+          </div>
           </div>
         </div>
-        <section className="py-24" id="services">
+
+
+
+        {/* <section className="py-14" id="services">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900">
             Помощь в получении государственных миграционных услуг
           </h2>
@@ -170,14 +199,6 @@ export default function Home() {
                 Позволяет получить дубликаты или оригиналы ранее выданных бумаг
                 в другой стране.
               </p>
-              <div className="mt-4 flex space-x-2">
-                <a
-                  className="px-5 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
-                  href="#"
-                >
-                  Подробнее
-                </a>
-              </div>
             </div>
             <div className="bg-white p-6 rounded-lg border border-slate-200">
               <BadgeCheck className="text-primary text-3xl h-8 w-8" />
@@ -188,14 +209,7 @@ export default function Home() {
                 Долгосрочный статус для жизни и работы в Казахстане с
                 возможностью получать кредиты и приобретать недвижимость.
               </p>
-              <div className="mt-4 flex space-x-2">
-                <a
-                  className="px-5 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
-                  href="#"
-                >
-                  Подробнее
-                </a>
-              </div>
+
             </div>
             <div className="bg-white p-6 rounded-lg border border-slate-200">
               <Briefcase className="text-primary text-3xl h-8 w-8" />
@@ -206,14 +220,7 @@ export default function Home() {
                 Документ, который дает иностранцам право на официальное
                 трудоустройство.
               </p>
-              <div className="mt-4 flex space-x-2">
-                <a
-                  className="px-5 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
-                  href="#"
-                >
-                  Подробнее
-                </a>
-              </div>
+
             </div>
             <div className="bg-white p-6 rounded-lg border border-slate-200">
               <Landmark className="text-primary text-3xl h-8 w-8" />
@@ -224,14 +231,7 @@ export default function Home() {
                 Казахстан привлекает бизнес низкими налогами, простой
                 регистрацией и доступом к международным рынкам.
               </p>
-              <div className="mt-4 flex space-x-2">
-                <a
-                  className="px-5 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
-                  href="#"
-                >
-                  Подробнее
-                </a>
-              </div>
+
             </div>
             <div className="bg-white p-6 rounded-lg border border-slate-200">
               <Plane className="text-primary text-3xl h-8 w-8" />
@@ -240,14 +240,7 @@ export default function Home() {
                 Разрешение на въезд для граждан стран, с которыми не установлен
                 безвизовый режим.
               </p>
-              <div className="mt-4 flex space-x-2">
-                <a
-                  className="px-5 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
-                  href="#"
-                >
-                  Подробнее
-                </a>
-              </div>
+
             </div>
             <div className="bg-white p-6 rounded-lg border border-slate-200">
               <Flag className="text-primary text-3xl h-8 w-8" />
@@ -258,18 +251,12 @@ export default function Home() {
                 Поможем вам пройти весь путь до получения паспорта РК.
                 Подготовим полный комплект документов.
               </p>
-              <div className="mt-4 flex space-x-2">
-                <a
-                  className="px-5 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
-                  href="#"
-                >
-                  Подробнее
-                </a>
-              </div>
+
             </div>
           </div>
-        </section>
-        <section className="py-16 bg-slate-50 rounded-2xl" id="about">
+        </section> */}
+
+        {/* <section className="py-16 bg-slate-50 rounded-2xl" id="about">
           <div className="grid lg:grid-cols-2 gap-12 items-center px-8">
             <div>
               <Image
@@ -307,8 +294,277 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </section> */}
+
+        <section className="pt-10 overflow-hidden">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold tracking-tight mb-6">Визы из Казахстана</h2>
+            <div className="grid lg:grid-cols-12 gap-12">
+              <div className="lg:col-span-4 rounded-3xl overflow-hidden relative min-h-[500px] bg-white">
+                <Image
+                  alt="World Map"
+                  className="w-full h-full object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsP7T30rVTMsRMuckn7rFCDvweSooxaV1fYs2yP-qnnMQ8jnXOTP-O-idf6s2ZEJggDDXftxX0lxFCec-NV_l-Q57ycWTb8E0q-sfqw0q1_FKoXBmBxdOCxc7fNm8QcVRaMV6iu4mkKX18LsorjfnTAb0qFg-gBLBXS0IBeR-qepyvKgXPgtT6oRP2B4KjkPBDdXfz1ECHr_FbJQmrDmMP02WjU-61dXYzhqJ3yHO3dHgV07eRyITMZQGw4vjqWb62lgfTVzluNf4"
+                  data-alt="Stylized world map showing global travel routes"
+                  fill
+                  sizes="(max-width:1024px) 100vw, 384px"
+                  style={{ objectFit: 'cover' }}
+                  priority
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent flex flex-col justify-end p-8 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Весь мир открыт для вас</h3>
+                  <p className="text-sm opacity-90">Профессиональная помощь в получении виз в более чем 50 стран мира.</p>
+                </div>
+              </div>
+              <div className="lg:col-span-8 grid md:grid-cols-2 gap-8">
+                {/* Europe */}
+                <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                  <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                    <Euro className="text-primary" size={20} />
+                    <h4 className="font-bold">Европа</h4>
+                  </div>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">Германия</li>
+                    <li className="flex items-center gap-2">Франция</li>
+                    <li className="flex items-center gap-2">Испания</li>
+                    <li className="flex items-center gap-2">Италия</li>
+                    <li className="flex items-center gap-2">Англия</li>
+                  </ul>
+                </div>
+                {/* Asia */}
+                <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                  <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                    <Landmark className="text-primary" size={20} />
+                    <h4 className="font-bold">Азия</h4>
+                  </div>
+                  <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                    <li>Вьетнам</li><li>Индонезия</li>
+                    <li>Камбоджа</li><li>Лаос</li>
+                    <li>Малайзия</li><li>Сингапур</li>
+                    <li>Таиланд</li><li>Филиппины</li>
+                  </ul>
+                </div>
+                {/* SE Asia */}
+                <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                  <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                    <Building2 className="text-primary" size={20} />
+                    <h4 className="font-bold">Юго-Восточная Азия</h4>
+                  </div>
+                  <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                    <li>Китай</li><li>Япония</li>
+                    <li>Афганистан</li><li>Бангладеш</li>
+                    <li>Индия</li><li>Мальдивы</li>
+                    <li>Пакистан</li><li>Шри-Ланка</li>
+                  </ul>
+                </div>
+                {/* Americas (US/Canada/Aus as requested) */}
+                <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                  <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                    <Globe className="text-primary" size={20} />
+                    <h4 className="font-bold">Южная Америка (США/Канада)</h4>
+                  </div>
+                  <ul className="space-y-2 text-sm">
+                    <li>США</li>
+                    <li>Канада</li>
+                    <li>Австралия</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <section className="py-24" id="why-us">
+
+
+        <section className="pt-10 w-full">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="bg-white rounded-3xl overflow-hidden flex flex-col md:flex-row border border-slate-200">
+              <div className="md:w-1/2 p-6 lg:p-10 bg-primary text-white">
+                <h2 className="text-4xl font-black mb-6">Оставить заявку на услугу</h2>
+                <p className="opacity-90 mb-8">Получите бесплатную консультацию по оформлению виз и миграционным вопросам. Мы ответим на все ваши вопросы в течение 15 минут.</p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4">
+                    <Phone className="opacity-70" size={20} />
+                    <span>+7 (777) 000-00-00</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <Mail className="opacity-70" size={20} />
+                    <span>info@ozelim.kz</span>
+                  </div>
+                </div>
+                <div className="text-white">
+                  <p className="opacity-90 mt-4">
+                    Или свяжитесь с нами любым удобным Вам способом
+                  </p>
+                <div className="my-6 flex space-x-4">
+                  <a
+                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
+                    href="#"
+                  >
+                    <MessageCircle className="mr-2 text-emerald-300 h-5 w-5" />
+                    WhatsApp
+                  </a>
+                  <a
+                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
+                    href="#"
+                  >
+                    <SendPlaneIcon className="mr-2 text-emerald-300 h-5 w-5" />
+                    Telegram
+                  </a>
+                </div>
+
+              </div>
+              </div>
+              <div className="md:w-1/2 p-6 lg:p-16 space-y-6 bg-white ">
+                <div>
+                  <label className="block text-sm font-bold mb-2">Имя</label>
+                  <input className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow" placeholder="Введите ваше имя" type="text" />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold mb-2">№ телефона</label>
+                  <input className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow" placeholder="+7 (___) ___-__-__" type="tel" />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold mb-2">Выбрать услугу</label>
+                  <select className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow">
+                    <option>Оформление визы</option>
+                    <option>ВНЖ / ПМЖ</option>
+                    <option>ИИН / Банковская карта</option>
+                    <option>Трудоустройство за рубежом</option>
+                  </select>
+                </div>
+                <button className="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-xl font-bold soft-shadow shadow-lg transition-all">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="pt-10">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold tracking-tight mb-6">Услуги</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Card 1 */}
+              <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                  <HeartPulse size={28} />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Страхование</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">Оформление медицинских страховых полисов для выезда за рубеж и пребывания в РК в соответствии с международными стандартами.</p>
+                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
+              </div>
+              {/* Card 2 */}
+              <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                  <BadgeCheck size={28} />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Работа за рубежом</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">Помощь в поиске легального трудоустройства в странах Европы, Азии и Америки. Полное документальное сопровождение.</p>
+                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
+              </div>
+              {/* Card 3 */}
+              <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                  <Headphones size={28} />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Вызов специалиста</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">Консультация нашего эксперта с выездом в ваш офис или на дом для сбора документов и заполнения анкет.</p>
+                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
+              </div>
+              {/* Card 4 */}
+              <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                  <ShieldCheck size={28} />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Проверка документов</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">Профессиональный аудит вашего пакета документов для исключения рисков отказа в получении визы или РВП.</p>
+                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
+              </div>
+              {/* Card 5 */}
+              <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                  <UsersRound size={28} />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Услуги для граждан РФ</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">Специализированная помощь в получении ИИН, открытии банковских карт и оформлении ВНЖ для граждан Российской Федерации.</p>
+                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
+              </div>
+              {/* Card 6 */}
+              <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                  <Hotel size={28} />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Бронирование отелей</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">Подбор и бронирование отелей и курортных баз по всему миру по эксклюзивным корпоративным ценам.</p>
+                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section className="pt-10 w-full">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="bg-white rounded-3xl overflow-hidden flex flex-col md:flex-row border border-slate-200">
+              <div className="md:w-1/2 p-6 lg:p-10 bg-primary text-white">
+                <h2 className="text-4xl font-black mb-6">Оставить заявку на услугу</h2>
+                <p className="opacity-90 mb-8">Получите бесплатную консультацию по оформлению виз и миграционным вопросам. Мы ответим на все ваши вопросы в течение 15 минут.</p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4">
+                    <Phone className="opacity-70" size={20} />
+                    <span>+7 (777) 000-00-00</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <Mail className="opacity-70" size={20} />
+                    <span>info@ozelim.kz</span>
+                  </div>
+                </div>
+                <div className="text-white">
+                  <p className="opacity-90 mt-4">
+                    Или свяжитесь с нами любым удобным Вам способом
+                  </p>
+                <div className="my-6 flex space-x-4">
+                  <a
+                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
+                    href="#"
+                  >
+                    <MessageCircle className="mr-2 text-emerald-300 h-5 w-5" />
+                    WhatsApp
+                  </a>
+                  <a
+                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
+                    href="#"
+                  >
+                    <SendPlaneIcon className="mr-2 text-emerald-300 h-5 w-5" />
+                    Telegram
+                  </a>
+                </div>
+
+              </div>
+              </div>
+              <div className="md:w-1/2 p-6 lg:p-16 space-y-6 bg-white ">
+                <div>
+                  <label className="block text-sm font-bold mb-2">Имя</label>
+                  <input className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow" placeholder="Введите ваше имя" type="text" />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold mb-2">№ телефона</label>
+                  <input className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow" placeholder="+7 (___) ___-__-__" type="tel" />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold mb-2">Выбрать услугу</label>
+                  <select className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow">
+                    <option>Оформление визы</option>
+                    <option>ВНЖ / ПМЖ</option>
+                    <option>ИИН / Банковская карта</option>
+                    <option>Трудоустройство за рубежом</option>
+                  </select>
+                </div>
+                <button className="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-xl font-bold soft-shadow shadow-lg transition-all">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="pt-10" id="why-us">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-1 bg-primary p-12 rounded-lg flex items-center justify-center">
               <h2 className="text-4xl font-bold text-center text-white">
@@ -316,7 +572,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="lg:col-span-2 grid md:grid-cols-2 gap-8">
-              <div className="flex">
+              <div className="flex border border-slate-200 rounded-2xl p-4 bg-white">
                 <Brain className="text-primary text-3xl mr-4 h-8 w-8" />
                 <div>
                   <h3 className="font-bold text-lg text-slate-800">
@@ -328,7 +584,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex">
+              <div className="flex border border-slate-200 rounded-2xl p-4 bg-white">
                 <History className="text-primary text-3xl mr-4 h-8 w-8" />
                 <div>
                   <h3 className="font-bold text-lg text-slate-800">
@@ -339,7 +595,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex">
+              <div className="flex border border-slate-200 rounded-2xl p-4 bg-white">
                 <CheckCircle className="text-primary text-3xl mr-4 h-8 w-8" />
                 <div>
                   <h3 className="font-bold text-lg text-slate-800">
@@ -351,7 +607,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex">
+              <div className="flex border border-slate-200 rounded-2xl p-4 bg-white">
                 <Eye className="text-primary text-3xl mr-4 h-8 w-8" />
                 <div>
                   <h3 className="font-bold text-lg text-slate-800">
@@ -365,145 +621,75 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-16" id="testimonials">
-          <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-              Отзывы наших клиентов
-            </h2>
-            <a
-              className="bg-primary font-semibold px-6 py-2 rounded-lg inline-flex items-center hover:opacity-90 transition text-white"
-              href="#"
-            >
-              Все отзывы
-              <ArrowRight className="text-lg ml-1 h-5 w-5" />
-            </a>
+
+        <section className="py-10">
+    <div className="max-w-7xl mx-auto">
+      <div className="flex mb-6">
+        <h2 className="text-3xl font-bold tracking-tight">Вопросы</h2>
+      </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Post 1 */}
+        <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
+          <div className="aspect-video rounded-2xl overflow-hidden mb-6 soft-shadow relative shadow">
+            <Image
+              alt="Legal Documents"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmYOf_hW1pOQ-GdqE4Hue0hTpVJIeYNNF-9pSDwS4PYlIvVOdJmg4ux31OXFcCJjvUOSC90XMPgfchtZhVR4wL16CDkNpUyuw-FA1nlwJCoe15Ek9t34KGv6UhFJYvJd8TOYKKEu99JAMshcxHz4GUAB7NbaroGJ31HSVqYtEWYNYZK-Bee_ZQTmMzY4XHiKvdoJa1YA7VpzbR6HjSvl_0hImV-ZN1SeV0l2-eI8zzcb2I_Z4p0d73MbtvKYyX_2ib8RGR46JNSQc"
+              data-alt="Stack of legal migration documents on a desk"
+              fill
+              sizes="(max-width:1024px) 100vw, 384px"
+              style={{ objectFit: 'cover' }}
+              priority
+            />
+            <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">Гайд</div>
           </div>
-          <div className="relative">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-lg border border-slate-200 flex flex-col">
-                <div className="flex items-center">
-                  <Image
-                    alt="Avatar of Mariia Goncharova"
-                    className="w-10 h-10 rounded-full"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlbpzdaGQVYtgvb2o-xs3CterrZh1rPYIl-2cuhDQkAtGuUuMvJGiAOmpRrqJUnSf-dt8wfjGptkpkhUtFJpq0HQeCV_D0JaMPynPYvjCN_8GlHGuY6oLrKpu3x-rEekbHHSQ5fZMWfTzSXxKhgMRPOESot2PMuoyhYjPg7CFmNn9BRDb8RVejI1GCok4jIGd2IojFADOfLDNQyvMghH-Xk4iGrVLvDQ7x9YZ91OTjmn17PVJr-TM3Ux3gmuuWpEIuyRU5NASg2bU"
-                    width={40}
-                    height={40}
-                    style={{
-                      borderRadius: "9999px",
-                      width: "2.5rem",
-                      height: "2.5rem",
-                    }}
-                    unoptimized
-                  />
-                  <div className="ml-4">
-                    <p className="font-semibold text-slate-800">
-                      Mariia Goncharova
-                    </p>
-                    <p className="text-xs text-slate-500">
-                      Вид на жительство (ВНЖ)
-                    </p>
-                  </div>
-                </div>
-                <div className="flex text-yellow-400 my-4">
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                </div>
-                <p className="text-sm text-slate-600 grow">
-                  Обращалась в мае 24 за оформлением вида на жительство мне и
-                  моему мужу...
-                </p>
-                <button className="mt-4 bg-primary font-semibold w-full py-2.5 rounded-lg hover:opacity-90 transition text-white">
-                  Читать полностью
-                </button>
-              </div>
-              <div className="bg-white p-6 rounded-lg border border-slate-200 flex flex-col">
-                <div className="flex items-center">
-                  <Image
-                    alt="Avatar of Евгений Вейсалов"
-                    className="w-10 h-10 rounded-full"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL_2R6I_uMLWrHOEwxxs4ZRfA9XB_YB_9zb_GDFn_KwTDH2x9SIhr4InNBdg1zKYvLKDXIOugVQlA7iEW_Lrq30t8bnidxhqDcumVtK8Fr-fQFa2vQ7MT1HrK3STE--efIHgH9id5zi_0PesMX_rhKHOToE-BaDWrxMagNdlam-dKJOQutQy1ym-3apipDrSUla9EpWV4gdkeo_zNhIk_AO0zOpO3FWas0yZ7Pc1_D-mhndwvuMOBDwCWZjxmSI3Smb-rcnhZLqcE"
-                    width={40}
-                    height={40}
-                    style={{
-                      borderRadius: "9999px",
-                      width: "2.5rem",
-                      height: "2.5rem",
-                    }}
-                    unoptimized
-                  />
-                  <div className="ml-4">
-                    <p className="font-semibold text-slate-800">
-                      Евгений Вейсалов
-                    </p>
-                    <p className="text-xs text-slate-500">
-                      Вид на жительство (ВНЖ)
-                    </p>
-                  </div>
-                </div>
-                <div className="flex text-yellow-400 my-4">
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                </div>
-                <p className="text-sm text-slate-600 grow">
-                  На этапе подачи документов, впечатления о работе компании
-                  положительные...
-                </p>
-                <button className="mt-4 bg-primary font-semibold w-full py-2.5 rounded-lg hover:opacity-90 transition text-white">
-                  Читать полностью
-                </button>
-              </div>
-              <div className="bg-white p-6 rounded-lg border border-slate-200 flex flex-col">
-                <div className="flex items-center">
-                  <Image
-                    alt="Avatar of Аудия Кодирова"
-                    className="w-10 h-10 rounded-full"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKm6ylUvKIhXsyartLqhCfm02DcvULkmjsxxt2WeKowizYPg4G1OokTEQAs0fVllVZ3NFZ27uIIKuGKP4yyrYXiMI8t_UCXqrIWI4OwQny8no74yQeIslxxL7IyTxsvzq-v9uuwfTpVzCHb5ff-ei9UhVdMLuaBX8Citvc11rNJoCIsUM77kycHFbTfuG7Fn30UsCCa56ZXjaGFPomHIOdL4U8pDyirwpepc2uWzY6iaqXQB95LzRrjcTwpyPOMRu1RIJ-Al9vflA"
-                    width={40}
-                    height={40}
-                    style={{
-                      borderRadius: "9999px",
-                      width: "2.5rem",
-                      height: "2.5rem",
-                    }}
-                    unoptimized
-                  />
-                  <div className="ml-4">
-                    <p className="font-semibold text-slate-800">
-                      Аудия Кодирова
-                    </p>
-                    <p className="text-xs text-slate-500">
-                      Гражданство Казахстана
-                    </p>
-                  </div>
-                </div>
-                <div className="flex text-yellow-400 my-4">
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                  <Star className="text-base h-4 w-4" fill="currentColor" />
-                </div>
-                <p className="text-sm text-slate-600 grow">
-                  Кто сталкивался с оформлением гражданства знает, какой это не
-                  простой процесс.
-                </p>
-                <button className="mt-4 bg-primary font-semibold w-full py-2.5 rounded-lg hover:opacity-90 transition text-white">
-                  Читать полностью
-                </button>
-              </div>
-            </div>
-            <button className="absolute -right-4 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-slate-100 transition hidden lg:block">
-              <ArrowRight className="text-slate-600 h-5 w-5" />
-            </button>
+          <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Как получить ВНЖ в Казахстане в 2024 году?</h3>
+          <p className="text-slate-500 text-sm line-clamp-3 mb-4">Подробная инструкция по сбору документов, срокам рассмотрения и основным требованиям для получения вида на жительство...</p>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">12 Октября 2023</span>
+        </div>
+        {/* Post 2 */}
+        <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
+          <div className="aspect-video rounded-2xl overflow-hidden mb-6 soft-shadow relative shadow">
+            <Image
+              alt="Meeting"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC8QF-dedHBSPL-QG5238jDF-6frXS5LdTOBaesD08gjVXWIY-mDiu_tTCZJMaSHWPLCXnZAouFLF_TZ1ZEfeTTAOCIxDh5cMa9IuaHnpbhR80ZHEVMMmunBOd_Ym5I2nHhMYKkjzNNKW1FXHdDzj45eRD_wWLlL0zLpSgEu7OovQS-8AK0gZmHFAthI8ql0Zm3-YLv-V3pEpihE9eIEjH17srx__7w5g3oVzcU_Ab8V-vcpd0HZ9CknpoDXEHjrfO8riU4xSH6-o"
+              data-alt="Business professionals in a corporate meeting setting"
+              fill
+              sizes="(max-width:1024px) 100vw, 384px"
+              style={{ objectFit: 'cover' }}
+              priority
+            />
+            <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">Бизнес</div>
           </div>
-        </section>
-        <section className="py-16" id='section-id1'>
+          <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Digital Nomad Visa: Новые возможности для IT</h3>
+          <p className="text-slate-500 text-sm line-clamp-3 mb-4">Казахстан запустил программу для цифровых кочевников. Разбираемся, кто может претендовать и какие льготы это дает...</p>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">05 Октября 2023</span>
+        </div>
+        {/* Post 3 */}
+        <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
+          <div className="aspect-video rounded-2xl overflow-hidden mb-6 soft-shadow relative shadow">
+            <Image
+              alt="Law"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAE8JWIqZxdXbN47Jxtwla685FfeS2LhXQT1qyh9leH4msvAFnAlh0mE_spieXkzZH1ShFnjgpQF8-N0L1HsJkxeu5aZku3yT87wexyhKR_MtdSN4Med6fbS8g5FZ7n_moZ1obfQDvIDEXlEf8P13kbKHw5mN1LemXM77DBD_AecKW9R6XHDhSflZWhmMEPyxfk6qtND0SRVkjdJWsGLk0-eHx8_DUS0ddMfJYLx26taLWyA0Qv2EPFoNQh3k2PpGDj9HKfTF0BIE"
+              data-alt="Gavel and law books representing legal services"
+              fill
+              sizes="(max-width:1024px) 100vw, 384px"
+              style={{ objectFit: 'cover' }}
+              priority
+            />
+            <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">Законодательство</div>
+          </div>
+          <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Изменения в миграционном учете</h3>
+          <p className="text-slate-500 text-sm line-clamp-3 mb-4">Важные поправки в законодательстве РК, которые вступают в силу с начала следующего месяца. О чем нужно знать иностранцам...</p>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">28 Сентября 2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        {/* <section className="py-16" id='section-id1'>
           <div className="relative bg-primary rounded-2xl p-8 md:p-16 overflow-hidden">
             <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
               <div>
@@ -587,7 +773,9 @@ export default function Home() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
+
+
       </main>
     </div>
   );
