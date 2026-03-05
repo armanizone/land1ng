@@ -420,7 +420,7 @@ export default function Page() {
             />
             <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">Гайд</div>
           </div>
-          <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Как получить ВНЖ в Казахстане в 2024 году?</h3>
+          <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Как получить ВНЖ в Казахстане в 2026 году?</h3>
           <p className="text-slate-500 text-sm line-clamp-3 mb-4">Подробная инструкция по сбору документов, срокам рассмотрения и основным требованиям для получения вида на жительство...</p>
           <span className="text-xs font-bold uppercase tracking-wider text-slate-400">12 Октября 2023</span>
         </div>

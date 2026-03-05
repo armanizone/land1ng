@@ -643,9 +643,9 @@ export default function Home() {
             />
             <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">Гайд</div>
           </div>
-          <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Как получить ВНЖ в Казахстане в 2024 году?</h3>
+          <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Как получить ВНЖ в Казахстане в 2026 году?</h3>
           <p className="text-slate-500 text-sm line-clamp-3 mb-4">Подробная инструкция по сбору документов, срокам рассмотрения и основным требованиям для получения вида на жительство...</p>
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">12 Октября 2023</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">12 Октября 2026</span>
         </div>
         {/* Post 2 */}
         <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
@@ -664,7 +664,7 @@ export default function Home() {
           </div>
           <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Digital Nomad Visa: Новые возможности для IT</h3>
           <p className="text-slate-500 text-sm line-clamp-3 mb-4">Казахстан запустил программу для цифровых кочевников. Разбираемся, кто может претендовать и какие льготы это дает...</p>
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">05 Октября 2023</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">05 Октября 2026</span>
         </div>
         {/* Post 3 */}
         <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
@@ -683,7 +683,7 @@ export default function Home() {
           </div>
           <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Изменения в миграционном учете</h3>
           <p className="text-slate-500 text-sm line-clamp-3 mb-4">Важные поправки в законодательстве РК, которые вступают в силу с начала следующего месяца. О чем нужно знать иностранцам...</p>
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">28 Сентября 2023</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-400">28 Сентября 2026</span>
         </div>
       </div>
     </div>
