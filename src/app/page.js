@@ -1,33 +1,9 @@
+import { BadgeCheck, Briefcase, Building2, Euro, Globe, GraduationCap, Headphones, HeartPulse, Home as HomeIcon, Hotel, Landmark, Laptop, Monitor, PlaneTakeoff, ShieldCheck, Stethoscope, TrendingUp, Users, UsersRound } from "lucide-react";
 import Image from "next/image";
-import {
-  Phone,
-  BadgeCheck,
-  Briefcase,
-  Landmark,
-  Brain,
-  History,
-  CheckCircle,
-  Eye,
-  MessageCircle,
-  Euro, Building2, Globe,
-  Mail,
-  Hotel,
-  UsersRound,
-  ShieldCheck,
-  Headphones,
-  HeartPulse,
-  Laptop,
-  Monitor,
-  Stethoscope,
-  TrendingUp,
-  Users,
-  GraduationCap,
-  PlaneTakeoff,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
-
 import Link from "next/link";
+
+
+
 
 export default function Home() {
   return (
@@ -103,7 +79,7 @@ export default function Home() {
         </div>
 
 
-        <section className="py-8 bg-white shadow-xl">
+        {/* <section className="py-8 bg-white shadow-xl">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-end justify-between mb-10 bg-white p-6 rounded-xl shadow-lg">
               <div className="space-y-2">
@@ -120,7 +96,6 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {/* Visa Types Tags */}
               <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <PlaneTakeoff className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">Туристические</p>
@@ -163,174 +138,55 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-
-
-        {/* <section className="py-14" id="services">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-900">
-            Помощь в получении государственных миграционных услуг
-          </h2>
-          <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <FileText className="text-primary text-3xl h-8 w-8" />
-              <h3 className="font-bold text-lg mt-2 text-slate-800">
-                Истребование документов за границей
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">
-                Позволяет получить дубликаты или оригиналы ранее выданных бумаг
-                в другой стране.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <BadgeCheck className="text-primary text-3xl h-8 w-8" />
-              <h3 className="font-bold text-lg mt-2 text-slate-800">
-                Вид на жительство (ВНЖ)
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">
-                Долгосрочный статус для жизни и работы в Казахстане с
-                возможностью получать кредиты и приобретать недвижимость.
-              </p>
-
-            </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <Briefcase className="text-primary text-3xl h-8 w-8" />
-              <h3 className="font-bold text-lg mt-2 text-slate-800">
-                Разрешение на работу (РНР)
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">
-                Документ, который дает иностранцам право на официальное
-                трудоустройство.
-              </p>
-
-            </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <Landmark className="text-primary text-3xl h-8 w-8" />
-              <h3 className="font-bold text-lg mt-2 text-slate-800">
-                Юридическое лицо
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">
-                Казахстан привлекает бизнес низкими налогами, простой
-                регистрацией и доступом к международным рынкам.
-              </p>
-
-            </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <Plane className="text-primary text-3xl h-8 w-8" />
-              <h3 className="font-bold text-lg mt-2 text-slate-800">Визы</h3>
-              <p className="mt-2 text-sm text-slate-600">
-                Разрешение на въезд для граждан стран, с которыми не установлен
-                безвизовый режим.
-              </p>
-
-            </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <Flag className="text-primary text-3xl h-8 w-8" />
-              <h3 className="font-bold text-lg mt-2 text-slate-800">
-                Гражданство Казахстана
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">
-                Поможем вам пройти весь путь до получения паспорта РК.
-                Подготовим полный комплект документов.
-              </p>
-
-            </div>
-          </div>
         </section> */}
 
-        {/* <section className="py-16 bg-slate-50 rounded-2xl" id="about">
-          <div className="grid lg:grid-cols-2 gap-12 items-center px-8">
-            <div>
-              <Image
-                alt="Team meeting in a modern office"
-                className="rounded-lg shadow-lg"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN6eim0oDvdSnyN0WeqpCfQ1vvAdBLb6a7VSd-aHQGoaInQ-NNhuH_o196toPXrBBb6l7Yxjh27K1n50WtdqDkR9svn_wdcPvHThH8H1IC-q1RI2zMSmaaixDfz-csYbnwA1MU_ts96kC4rwJCZl0-OdLJinfF4cSGiH65afc-U5OIH3t0p0W_3xrrWRmsH8HFFEnVnoaSuNW3GtkpjKVgZU0r7R9q2siP8zm3ZXnDdij0TpbhqgByk5aeSvsewxHlDKeE6c90AN4"
-                width={500}
-                height={312}
-                style={{
-                  borderRadius: "0.5rem",
-                  boxShadow: "0 10px 30px -5px rgba(15,23,42,0.25)",
-                }}
-                unoptimized
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
-                О компании
-              </h2>
-              <p className="mt-4 text-lg text-slate-600">
-                «Ozelim» — это специализированное агентство, сфокусированное на
-                решении миграционных задач иностранных граждан в Республике
-                Казахстан.
-              </p>
-              <p className="mt-2 text-slate-600">
-                Наша деятельность целиком сосредоточена на вопросах
-                миграционного права, что позволило нам достичь глубокого
-                понимания всех тонкостей этой области.
-              </p>
-              <a
-                className="mt-6 inline-block px-5 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
-                href="#"
-              >
-                Подробнее
-              </a>
-            </div>
-          </div>
-        </section> */}
-
-        <section className="py-16 bg-white shadow-xl">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex items-end justify-between mb-10 bg-white p-6 rounded-xl shadow-lg">
+        <section className="py-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-end justify-between mb-6">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tight">Визы в Казахстан</h2>
                 <p className="text-slate-500">Поможем оформить разрешение на въезд для любых целей</p>
               </div>
-              {/* <div className="flex gap-2">
-                <button className="p-2 border border-primary/20 rounded-lg hover:bg-primary/5 transition-all shadow-md">
-                  <ChevronLeft size={20} />
-                </button>
-                <button className="p-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all shadow-md">
-                  <ChevronRight size={20} />
-                </button>
-              </div> */}
+
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <PlaneTakeoff className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">Туристические</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <Briefcase className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">Рабочие</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <GraduationCap className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">Студенческие</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <Building2 className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">Бизнес-визы</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <Users className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">На воссоединение</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <TrendingUp className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">Инвестиционные</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <Stethoscope className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">На лечение</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
-                <Home className="text-primary mb-3" size={32} />
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+                <HomeIcon className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">ПМЖ</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <Monitor className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">Электронная</p>
               </div>
-              <div className="group p-6 bg-background-light rounded-xl border border-transparent hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
+              <div className="grid place-items-center group p-6 bg-white rounded-xl border border-slate-200 hover:border-primary/30 transition-all text-center cursor-pointer soft-shadow shadow">
                 <Laptop className="text-primary mb-3" size={32} />
                 <p className="font-bold text-sm">Digital Nomad</p>
               </div>
@@ -359,7 +215,6 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:col-span-8 grid md:grid-cols-2 gap-8">
-                {/* Europe */}
                 <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
                   <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
                     <Euro className="text-primary" size={20} />
@@ -373,7 +228,6 @@ export default function Home() {
                     <li className="flex items-center gap-2">Англия</li>
                   </ul>
                 </div>
-                {/* Asia */}
                 <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
                   <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
                     <Landmark className="text-primary" size={20} />
@@ -386,7 +240,6 @@ export default function Home() {
                     <li>Таиланд</li><li>Филиппины</li>
                   </ul>
                 </div>
-                {/* SE Asia */}
                 <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
                   <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
                     <Building2 className="text-primary" size={20} />
@@ -399,7 +252,6 @@ export default function Home() {
                     <li>Пакистан</li><li>Шри-Ланка</li>
                   </ul>
                 </div>
-                {/* Americas (US/Canada/Aus as requested) */}
                 <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
                   <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
                     <Globe className="text-primary" size={20} />
@@ -484,59 +336,47 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tight mb-6">Услуги</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Card 1 */}
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <HeartPulse size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Страхование</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">Оформление медицинских страховых полисов для выезда за рубеж и пребывания в РК в соответствии с международными стандартами.</p>
-                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
               </div>
-              {/* Card 2 */}
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <BadgeCheck size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Работа за рубежом</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">Помощь в поиске легального трудоустройства в странах Европы, Азии и Америки. Полное документальное сопровождение.</p>
-                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
               </div>
-              {/* Card 3 */}
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <Headphones size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Вызов специалиста</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">Консультация нашего эксперта с выездом в ваш офис или на дом для сбора документов и заполнения анкет.</p>
-                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
               </div>
-              {/* Card 4 */}
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <ShieldCheck size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Проверка документов</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">Профессиональный аудит вашего пакета документов для исключения рисков отказа в получении визы или РВП.</p>
-                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
               </div>
-              {/* Card 5 */}
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <UsersRound size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Услуги для граждан РФ</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">Специализированная помощь в получении ИИН, открытии банковских карт и оформлении ВНЖ для граждан Российской Федерации.</p>
-                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
               </div>
-              {/* Card 6 */}
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <Hotel size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Бронирование отелей</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">Подбор и бронирование отелей и курортных баз по всему миру по эксклюзивным корпоративным ценам.</p>
-                {/* <a className="text-primary font-bold text-sm inline-flex items-center gap-2" href="#">Подробнее <ArrowRight size={16} className="text-xs" /></a> */}
               </div>
             </div>
           </div>
@@ -670,7 +510,6 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tight">Вопросы</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Post 1 */}
               <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
                 <div className="aspect-video rounded-2xl overflow-hidden mb-6 soft-shadow relative shadow">
                   <Image
@@ -689,7 +528,6 @@ export default function Home() {
                 <p className="text-slate-500 text-sm line-clamp-3 mb-4">Подробная инструкция по сбору документов, срокам рассмотрения и основным требованиям для получения вида на жительство...</p>
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-400">12 Октября 2026</span>
               </div>
-              {/* Post 2 */}
               <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
                 <div className="aspect-video rounded-2xl overflow-hidden mb-6 soft-shadow relative shadow">
                   <Image
@@ -708,7 +546,6 @@ export default function Home() {
                 <p className="text-slate-500 text-sm line-clamp-3 mb-4">Казахстан запустил программу для цифровых кочевников. Разбираемся, кто может претендовать и какие льготы это дает...</p>
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-400">05 Октября 2026</span>
               </div>
-              {/* Post 3 */}
               <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
                 <div className="aspect-video rounded-2xl overflow-hidden mb-6 soft-shadow relative shadow">
                   <Image
@@ -731,97 +568,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="py-16" id='section-id1'>
-          <div className="relative bg-primary rounded-2xl p-8 md:p-16 overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
-              <div>
-                <h2 className="text-4xl font-bold text-white">
-                  Получите бесплатную консультацию
-                </h2>
-                <form action="#" className="mt-8 space-y-4 text-white">
-                  <input
-                    className="w-full bg-white/10 border border-white/20 rounded-lg py-3 px-4 focus:ring-2 focus:ring-white focus:border-transparent"
-                    placeholder="Напишите ваше имя*"
-                    type="text"
-                  />
-                  <input
-                    className="w-full bg-white/10 border border-white/20 rounded-lg py-3 px-4  focus:ring-2 focus:ring-white focus:border-transparent"
-                    placeholder="Номер телефона*"
-                    type="tel"
-                  />
-                  <input
-                    className="w-full bg-white/10 border border-white/20 rounded-lg py-3 px-4  focus:ring-2 focus:ring-white focus:border-transparent"
-                    placeholder="Напишите ваш e-mail"
-                    type="email"
-                  />
-                  <textarea
-                    className="w-full bg-white/10 border border-white/20 rounded-lg py-3 px-4  focus:ring-2 focus:ring-white focus:border-transparent"
-                    placeholder="Комментарий"
-                    rows={3}
-                    defaultValue={""}
-                  />
-                  <button
-                    className="bg-white text-primary font-semibold px-8 py-3 rounded-lg hover:bg-slate-100 transition"
-                    type="submit"
-                  >
-                    Позвоните мне
-                  </button>
-                  <p className="text-xs">
-                    Нажимая на кнопку, вы соглашаетесь с пользовательским
-                    соглашением
-                  </p>
-                </form>
-              </div>
-              <div className="text-center text-white">
-                <p className="text-lg">
-                  Или свяжитесь с нами любым удобным Вам способом
-                </p>
-                <div className="my-6 flex justify-center space-x-4">
-                  <a
-                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
-                    href="#"
-                  >
-                    <MessageCircle className="mr-2 text-emerald-300 h-5 w-5" />
-                    WhatsApp
-                  </a>
-                  <a
-                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
-                    href="#"
-                  >
-                    <SendPlaneIcon className="mr-2 text-emerald-300 h-5 w-5" />
-                    Telegram
-                  </a>
-                </div>
-                <p className="text-4xl lg:text-5xl font-bold tracking-wider ">
-                  +7 727 310 7843
-                </p>
-              </div>
-            </div>
-            <div className="hidden md:block">
-              <Image
-                alt="Smiling woman on the phone"
-                className="absolute bottom-0 right-0 h-2/3 md:h-full w-auto opacity-80 md:opacity-100 z-0"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6zAKrKAY-2uZUNQFZpmA-i2PLgVQ9hQsFLn3gIpAWC_o-rgVtpZvXMUhuGR4vQCCduO4TMHdzZco8c7OspbfONQk41L22T_0NTkCEYmZiaTxXZItMUFVSYtKWhMUpw6PC5K4sCtK_fyOD_r7SoLzrl-PaDp7qxIEiw8f85jGhznogFZaZEuuxsjTrez66WSNoz_4b6GBxV68--SGQpOW7s-okyYCek-YFFFl0gdXZ4mlgepm4c6D3JpECCZA9yxYVjZBV7tOnTqA"
-                width={448}
-                height={542}
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  right: 0,
-                  opacity: "0.7",
-                  zIndex: 0,
-                }}
-                unoptimized
-              />
-            </div>
-          </div>
-        </section> */}
-
-
       </main>
     </div>
   );
 }
+
+import {
+  Phone,
+  Mail,
+  MessageCircle,
+  Brain,
+  History,
+  CheckCircle,
+  Eye,
+} from "lucide-react";
 
 // Custom icons that are similar to WhatsApp/Telegram
 function SendPlaneIcon({ className }) {
