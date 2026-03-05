@@ -103,7 +103,7 @@ export const Header = () => {
           </Link> */}
           <Link
             className="text-slate-800 font-bold hover:text-primary transition"
-            href="about"
+            href="/"
           >
             Для иностранных граждан
           </Link>
