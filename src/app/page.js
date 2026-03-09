@@ -1,4 +1,4 @@
-import { BadgeCheck, Briefcase, Building2, Euro, Globe, GraduationCap, Headphones, HeartPulse, Home as HomeIcon, Hotel, Landmark, Laptop, Monitor, PlaneTakeoff, ShieldCheck, Stethoscope, TrendingUp, Users, UsersRound } from "lucide-react";
+import { BadgeCheck, BadgeDollarSign, Briefcase, Building2, Euro, Globe, GraduationCap, Headphones, HeartPulse, Home as HomeIcon, Hotel, Landmark, Laptop, Monitor, Plane, PlaneTakeoff, ShieldCheck, Stethoscope, TrendingUp, Users, UsersRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ export default function Home() {
     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <main className="py-8">
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        {/* <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
           <span className="inline-block py-1 px-3 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">Ваш надежный гид в Казахстане</span>
 
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </div>
           </div>
-        </div>
+        </div> */}
 
 
         {/* <section className="py-8 bg-white shadow-xl">
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </section> */}
 
-        <section className="py-8">
+        {/* <section className="py-8">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-6">
               <div className="space-y-2">
@@ -192,7 +192,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="pt-10 overflow-hidden">
           <div className="max-w-7xl mx-auto">
@@ -214,54 +214,103 @@ export default function Home() {
                   <p className="text-sm opacity-90">Профессиональная помощь в получении виз в более чем 50 стран мира.</p>
                 </div>
               </div>
-              <div className="lg:col-span-8 grid md:grid-cols-2 gap-8">
-                <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
-                  <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
-                    <Euro className="text-primary" size={20} />
-                    <h4 className="font-bold">Европа</h4>
-                  </div>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">Германия</li>
-                    <li className="flex items-center gap-2">Франция</li>
-                    <li className="flex items-center gap-2">Испания</li>
-                    <li className="flex items-center gap-2">Италия</li>
-                    <li className="flex items-center gap-2">Англия</li>
+              <div className="lg:col-span-8 flex flex-col gap-8">
+                {/* Visa types list */}
+                <div className="bg-white rounded-2xl p-6 border border-slate-200 mb-2">
+                  <h4 className="font-bold text-lg mb-3">Виды виз</h4>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm font-medium">
+                    <li className="flex items-center gap-2">
+                      <Plane className="text-primary" size={16} />
+                      Туристические визы
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <BadgeDollarSign className="text-primary" size={16} />
+                      Рабочие визы
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <GraduationCap className="text-primary" size={16} />
+                      Студенческие и учебные визы
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Briefcase className="text-primary" size={16} />
+                      Бизнес-визы
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Users className="text-primary" size={16} />
+                      Визы на воссоединение семьи
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <TrendingUp className="text-primary" size={16} />
+                      Инвестиционные визы
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Stethoscope className="text-primary" size={16} />
+                      Визы на лечение
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <HomeIcon className="text-primary" size={16} />
+                      Визы для ПМЖ
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Monitor className="text-primary" size={16} />
+                      Электронная
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Laptop className="text-primary" size={16} />
+                      Digital Nomad Visa
+                    </li>
                   </ul>
                 </div>
-                <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
-                  <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
-                    <Landmark className="text-primary" size={20} />
-                    <h4 className="font-bold">Азия</h4>
+                {/* Countries list */}
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                    <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                      <Euro className="text-primary" size={20} />
+                      <h4 className="font-bold">Европа</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2">Германия</li>
+                      <li className="flex items-center gap-2">Франция</li>
+                      <li className="flex items-center gap-2">Испания</li>
+                      <li className="flex items-center gap-2">Италия</li>
+                      <li className="flex items-center gap-2">Англия</li>
+                    </ul>
                   </div>
-                  <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                    <li>Вьетнам</li><li>Индонезия</li>
-                    <li>Камбоджа</li><li>Лаос</li>
-                    <li>Малайзия</li><li>Сингапур</li>
-                    <li>Таиланд</li><li>Филиппины</li>
-                  </ul>
-                </div>
-                <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
-                  <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
-                    <Building2 className="text-primary" size={20} />
-                    <h4 className="font-bold">Юго-Восточная Азия</h4>
+                  <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                    <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                      <Landmark className="text-primary" size={20} />
+                      <h4 className="font-bold">Азия</h4>
+                    </div>
+                    <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                      <li>Вьетнам</li><li>Индонезия</li>
+                      <li>Камбоджа</li><li>Лаос</li>
+                      <li>Малайзия</li><li>Сингапур</li>
+                      <li>Таиланд</li><li>Филиппины</li>
+                    </ul>
                   </div>
-                  <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                    <li>Китай</li><li>Япония</li>
-                    <li>Афганистан</li><li>Бангладеш</li>
-                    <li>Индия</li><li>Мальдивы</li>
-                    <li>Пакистан</li><li>Шри-Ланка</li>
-                  </ul>
-                </div>
-                <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
-                  <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
-                    <Globe className="text-primary" size={20} />
-                    <h4 className="font-bold">Южная Америка (США/Канада)</h4>
+                  <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                    <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                      <Building2 className="text-primary" size={20} />
+                      <h4 className="font-bold">Юго-Восточная Азия</h4>
+                    </div>
+                    <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                      <li>Китай</li><li>Япония</li>
+                      <li>Афганистан</li><li>Бангладеш</li>
+                      <li>Индия</li><li>Мальдивы</li>
+                      <li>Пакистан</li><li>Шри-Ланка</li>
+                    </ul>
                   </div>
-                  <ul className="space-y-2 text-sm">
-                    <li>США</li>
-                    <li>Канада</li>
-                    <li>Австралия</li>
-                  </ul>
+                  <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                    <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                      <Globe className="text-primary" size={20} />
+                      <h4 className="font-bold">Южная Америка (США/Канада)</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm">
+                      <li>США</li>
+                      <li>Канада</li>
+                      <li>Австралия</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -334,7 +383,7 @@ export default function Home() {
 
         <section className="pt-10">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Услуги</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-6">Доп.услуги</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">

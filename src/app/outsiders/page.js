@@ -12,12 +12,23 @@ import {
   Landmark,
   MessageCircle,
   Send,
+  PlaneTakeoff,
+  Briefcase,
+  GraduationCap,
+  Building2,
+  Users,
+  TrendingUp,
+  Stethoscope,
+  HomeIcon,
+  Monitor,
+  Laptop,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function page() {
   return (
     <main>
-      <section className="py-16 md:py-24">
+      {/* <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-sm text-gray-500 mb-8">
             <span>Главная</span> &gt; <span>О компании</span>
@@ -54,10 +65,81 @@ export default function page() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="py-16 md:py-24 bg-gray-50">
+      </section> */}
+
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-4">
+        <div>
+          <span className="inline-block py-1 px-3 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">
+            Ваш надежный гид в Казахстане
+          </span>
+
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mt-4">
+            Миграционные услуги для иностранных граждан в Казахстане
+          </h1>
+          <p className="mt-4 text-lg text-slate-600">
+            Помощь миграционных юристов в оформлении документов на РВП, ВНЖ,
+            гражданство РК и получении виз С3 и С5.
+          </p>
+          <p className="mt-4 text-slate-600">
+            Гарантируем подачу документов в соответствии с законом
+          </p>
+          <div className="mt-8">
+            <Link
+              className="bg-primary font-semibold px-8 py-4 rounded-lg inline-block hover:opacity-90 transition shadow-lg shadow-primary/20 text-white"
+              href="#section-id1"
+            >
+              Бесплатная онлайн-консультация
+            </Link>
+          </div>
+        </div>
+
+        <div className="relative grid grid-cols-2 gap-4">
+          <div className="space-y-4">
+            <div className="rounded-2xl overflow-hidden h-64 soft-shadow shadow-lg bg-white">
+              <Image
+                alt="Almaty Architecture"
+                className="w-full h-full object-cover"
+                src="/Picture1.jpg"
+                height={200}
+                width={200}
+                data-alt="Modern Almaty architecture reflecting city life"
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden h-48 soft-shadow shadow-lg bg-white">
+              <Image
+                alt="Passport Control"
+                className="w-full h-full object-cover"
+                src="/Picture2.jpg"
+                height={200}
+                width={200}
+                data-alt="Officer checking international passport at customs"
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+          </div>
+          <div className="pt-12 space-y-4">
+            <div className="rounded-2xl overflow-hidden h-80 soft-shadow shadow-lg bg-white">
+              <Image
+                alt="Business Consultation"
+                className="w-full h-full object-cover"
+                src="/Picture3.jpg"
+                height={200}
+                width={200}
+                data-alt="Professional meeting between consultants and client"
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center bg-background-light rounded-lg shadow-lg overflow-hidden">
+          <div className="flex flex-col md:flex-row items-center bg-background-light overflow-hidden">
             <div className="relative w-full md:w-5/12">
               <div className="absolute inset-0 bg-opacity-50 flex items-end p-8 md:bg-opacity-0">
                 <div className="bg-gray-800 text-white p-6 rounded-lg md:translate-x-1/2">
@@ -111,7 +193,227 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="py-16 md:py-24">
+
+      <section className="py-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-end justify-between mb-6">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tight">
+                Визы в Казахстан
+              </h2>
+              <p className="text-slate-500">
+                Профессиональная помощь в подборе и оформлении всех видов виз
+                для иностранных граждан
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* 1. Дипломатические и служебные визы */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <PlaneTakeoff className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">
+                  Дипломатические и служебные визы
+                </p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">A1</span> — для глав
+                  государств, правительств и членов официальных делегаций.
+                  <br />
+                  <span className="font-semibold">A2</span> — для сотрудников
+                  дипмиссий, консульств, международных организаций.
+                  <br />
+                  <span className="font-semibold">A3</span> — для представителей
+                  иностранных государств и членов их семей.
+                  <br />
+                </p>
+                <p className="text-xs text-slate-500">
+                  Эти типы виз позволяют осуществлять официальный въезд и
+                  пребывание для реализации дипломатической и служебной
+                  деятельности.
+                </p>
+              </div>
+            </div>
+
+            {/* 2. Инвестиционные визы */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <TrendingUp className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">Инвестиционные визы</p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">B1</span> — для инвесторов и
+                  представителей инвесткомпаний.
+                </p>
+                <p className="text-xs text-slate-500">
+                  Виза для привлечения иностранных инвестиций и ведения
+                  инвестиционной деятельности в Казахстане.
+                </p>
+              </div>
+            </div>
+
+            {/* 3. Бизнес-визы */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <Building2 className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">Бизнес-визы</p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">B2</span> — деловые встречи,
+                  конференции, переговоры.
+                  <br />
+                  <span className="font-semibold">B3</span> — установка
+                  оборудования, предоставление услуг и др.
+                </p>
+                <p className="text-xs text-slate-500">
+                  Оптимальны для краткосрочных деловых визитов, командировок и
+                  выполнения профессиональной деятельности без трудоустройства.
+                </p>
+              </div>
+            </div>
+
+            {/* 4. Туристические визы */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <PlaneTakeoff className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">Туристические визы</p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">B12</span> — краткосрочные
+                  туристические поездки.
+                </p>
+                <p className="text-xs text-slate-500">
+                  Позволяют путешествовать по Казахстану с целью туризма,
+                  экскурсий, отдыха, изучения достопримечательностей.
+                </p>
+              </div>
+            </div>
+
+            {/* 5. Визы на лечение, частные и иные краткосрочные цели */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <Stethoscope className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">
+                  Визы на лечение, частные визиты
+                </p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">B10</span> — лечение.
+                  <br />
+                  <span className="font-semibold">B11</span> — частный визит
+                  (напр., к родственникам).
+                </p>
+                <p className="text-xs text-slate-500">
+                  Для получения медицинских услуг, посещения друзей,
+                  родственников, а также иных краткосрочных целей въезда.
+                </p>
+              </div>
+            </div>
+
+            {/* 6. Студенческие и учебные визы */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <GraduationCap className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">
+                  Студенческие и учебные визы
+                </p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">C9</span> — учеба в вузах,
+                  колледжах и других образовательных учреждениях.
+                </p>
+                <p className="text-xs text-slate-500">
+                  Необходимы для иностранных граждан, поступающих на учебу по
+                  программам высшего, среднего и дополнительного образования.
+                </p>
+              </div>
+            </div>
+
+            {/* 7. Рабочие визы */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <Briefcase className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">Рабочие визы</p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">C3</span> — прибытие на
+                  работу.
+                  <br />
+                  <span className="font-semibold">C4</span>,{" "}
+                  <span className="font-semibold">C5</span>,{" "}
+                  <span className="font-semibold">C6</span> — различные
+                  категории трудовой деятельности, сезонные работы и пр.
+                </p>
+                <p className="text-xs text-slate-500">
+                  Дают право на официальное трудоустройство и получение
+                  разрешения на работу на территории Казахстана.
+                </p>
+              </div>
+            </div>
+
+            {/* 8. Визы на воссоединение семьи */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <Users className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">
+                  Визы на воссоединение семьи
+                </p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">C2</span> — для членов семьи
+                  иностранных граждан, проживающих в РК.
+                </p>
+                <p className="text-xs text-slate-500">
+                  Позволяют супругам, детям, другим близким родственникам
+                  воссоединиться и проживать с семьей на территории страны.
+                </p>
+              </div>
+            </div>
+
+            {/* 9. Визы для ПМЖ (постоянное место жительства) */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <HomeIcon className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">Визы для ПМЖ</p>
+                <p className="text-sm text-slate-600 mb-1">
+                  <span className="font-semibold">C10</span> — для лиц,
+                  получивших разрешение на ПМЖ.
+                </p>
+                <p className="text-xs text-slate-500">
+                  После получения ПМЖ позволяет проживать и осуществлять
+                  трудовую или иную деятельность на постоянной основе.
+                </p>
+              </div>
+            </div>
+
+            {/* 10. Дополнительные типы виз */}
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <Monitor className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">Электронные визы</p>
+                <p className="text-sm text-slate-600 mb-1">
+                  Оформляются полностью онлайн для ряда краткосрочных целей
+                  (туризм, бизнес, лечение).
+                </p>
+                <p className="text-xs text-slate-500">
+                  Упрощают и ускоряют процесс получения разрешения на въезд без
+                  необходимости посещать консульство.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary/30 transition-all soft-shadow shadow flex gap-4">
+              <Laptop className="text-primary shrink-0 mt-1" size={32} />
+              <div>
+                <p className="font-bold text-base mb-1">Digital Nomad виза</p>
+                <p className="text-sm text-slate-600 mb-1">
+                  Для удалённых специалистов, фрилансеров, ИТ-экспертов –
+                  оформление специальных статусов для работы из Казахстана
+                  дистанционно.
+                </p>
+                <p className="text-xs text-slate-500">
+                  Позволяет свободно работать онлайн, проживать в стране и
+                  пользоваться всеми преимуществами статуса digital nomad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 items-start">
             <div className="bg-gray-800 text-white p-8 rounded-lg md:sticky md:top-24">
@@ -225,9 +527,7 @@ export default function page() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900">
-              Гарантии
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900">Гарантии</h2>
             <a
               className="bg-gray-800 text-white py-3 px-6 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-700 transition-colors"
               href="#"
@@ -290,9 +590,7 @@ export default function page() {
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900">
-              Способы оплаты
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900">Способы оплаты</h2>
             <a
               className="bg-gray-800 text-white py-3 px-6 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-700 transition-colors"
               href="#"

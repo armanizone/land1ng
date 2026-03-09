@@ -18,7 +18,7 @@ export const Header = () => {
       <div className="flex justify-between items-center border-b border-slate-200 pb-4 mb-4">
         <div className="flex items-center space-x-8">
           <div className="text-xl font-bold text-slate-800">
-            <Link href={"/"}>Ozelim</Link>
+            <Link href={"/"}>Visapro</Link>
           </div>
 
           <Link
@@ -28,7 +28,7 @@ export const Header = () => {
             О компании
             {/* <ChevronDown className="text-lg ml-1 h-4 w-4" /> */}
           </Link>
-          <div className="hidden md:flex items-center space-x-2 text-sm text-slate-500">
+          {/* <div className="hidden md:flex items-center space-x-2 text-sm text-slate-500">
             <Image
               alt="Google logo"
               className="h-4"
@@ -48,46 +48,30 @@ export const Header = () => {
                 <Star className="text-sm h-4 w-4" fill="currentColor" />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="hidden lg:flex items-center space-x-2 text-sm text-slate-500">
             <MapPin className="text-base h-5 w-5" />
-            <span>Павлодар</span>
+            <span>Астана</span>
           </div>
         </div>
-        <div className="hidden lg:flex items-center space-x-4 text-sm text-slate-500">
-          <span>г. Павлодар, ул. Гагарина, 50, офис </span>
-          <span>пн-пт 10:00 - 19:00, сб 11:00 - 16:00</span>
-        </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2">
+          <div className="hidden lg:flex items-center space-x-4 text-slate-600">
+            <span>Прием заявок онлайн 24/7</span>
+          </div>
           <a
-            className="hidden sm:flex items-center font-semibold text-slate-800"
-            href="tel:+77273107843"
+            href="https://wa.me/77073675161"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-2 items-center"
           >
-            <Phone className="mr-2 h-5 w-5" />
-            +7 000 000 0000
+            <span className="text-slate-500">WhatsApp</span>
+            <Image src={"/whatsapp.svg"} alt="" width={36} height={36} />
+            <span className="font-semibold">+7 707 367 5161</span>
           </a>
-          <a
-            className="h-8 w-8 rounded-full bg-emerald-500 flex items-center justify-center text-white"
-            href="#"
-          >
-            {/* WhatsApp */}
-            <MessageCircle className="text-xl h-5 w-5" />
-          </a>
-          <a
-            className="h-8 w-8 rounded-full bg-emerald-500 flex items-center justify-center text-white"
-            href="#"
-          >
-            {/* Telegram */}
-            <SendPlaneIcon className="text-xl h-5 w-5" />
-          </a>
-          {/* <button className="lg:hidden p-2 rounded-md hover:bg-slate-100">
-            <Menu className="text-slate-800 h-6 w-6" />
-          </button> */}
         </div>
       </div>
       <nav className="flex justify-between items-center">
         <div className="flex flex-col lg:flex-row space-x-6 space-y-3 lg:space-y-0">
-
           {/* <a
           className="flex items-center text-slate-800 font-bold hover:text-primary transition"
           href="#"
@@ -101,24 +85,23 @@ export const Header = () => {
           >
             О компании
           </Link> */}
+
           <Link
             className="text-slate-800 font-bold hover:text-primary transition"
             href="/"
-          >
-            Для иностранных граждан
+            >
+            Для граждан Казахстана
           </Link>
           <Link
             className="text-slate-800 font-bold hover:text-primary transition"
-            href="about"
+            href="outsiders"
           >
-            Для граждан Казахстана
+            Для иностранных граждан
           </Link>
-
         </div>
         <div className="flex items-center space-x-4">
-
           <a
-            className="hidden sm:inline-block whitespace-nowrap px-4 py-2 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-100 transition"
+            className="text-primary font-semibold hidden sm:inline-block whitespace-nowrap px-4 py-2 border border-slate-300 rounded-lg hover:bg-slate-100 transition"
             href="#"
           >
             Бесплатная консультация
