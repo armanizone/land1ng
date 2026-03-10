@@ -98,7 +98,7 @@ export default function Header () {
               className="text-slate-800 font-bold hover:text-primary transition"
               href="/"
               >
-              Для граждан Казахстана
+              Визы из Казахстана
             </Link>
             <Link
               className="text-slate-800 font-bold hover:text-primary transition"

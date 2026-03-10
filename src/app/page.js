@@ -1,15 +1,36 @@
-import { BadgeCheck, BadgeDollarSign, Briefcase, Building2, Euro, Globe, GraduationCap, Headphones, HeartPulse, Home as HomeIcon, Hotel, Landmark, Laptop, Monitor, Plane, PlaneTakeoff, ShieldCheck, Stethoscope, TrendingUp, Users, UsersRound } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  BadgeDollarSign,
+  Banknote,
+  Briefcase,
+  Building2,
+  CreditCard,
+  Euro,
+  Globe,
+  GraduationCap,
+  Headphones,
+  HeartPulse,
+  Home as HomeIcon,
+  Hotel,
+  Landmark,
+  Laptop,
+  Monitor,
+  Plane,
+  PlaneTakeoff,
+  ShieldCheck,
+  Stethoscope,
+  TrendingUp,
+  Users,
+  UsersRound,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-
-
 
 export default function Home() {
   return (
     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <main className="py-8">
-
         {/* <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
           <span className="inline-block py-1 px-3 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">Ваш надежный гид в Казахстане</span>
@@ -77,7 +98,6 @@ export default function Home() {
           </div>
           </div>
         </div> */}
-
 
         {/* <section className="py-8 bg-white shadow-xl">
           <div className="max-w-7xl mx-auto px-4">
@@ -196,22 +216,26 @@ export default function Home() {
 
         <section className="pt-10 overflow-hidden">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Визы из Казахстана</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-6">
+              Визы из Казахстана
+            </h2>
             <div className="grid lg:grid-cols-12 gap-12">
               <div className="lg:col-span-4 rounded-3xl overflow-hidden relative min-h-[500px] bg-white">
                 <Image
                   alt="World Map"
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsP7T30rVTMsRMuckn7rFCDvweSooxaV1fYs2yP-qnnMQ8jnXOTP-O-idf6s2ZEJggDDXftxX0lxFCec-NV_l-Q57ycWTb8E0q-sfqw0q1_FKoXBmBxdOCxc7fNm8QcVRaMV6iu4mkKX18LsorjfnTAb0qFg-gBLBXS0IBeR-qepyvKgXPgtT6oRP2B4KjkPBDdXfz1ECHr_FbJQmrDmMP02WjU-61dXYzhqJ3yHO3dHgV07eRyITMZQGw4vjqWb62lgfTVzluNf4"
+                  src={"/visa-from-kz.jpeg"}
                   data-alt="Stylized world map showing global travel routes"
                   fill
                   sizes="(max-width:1024px) 100vw, 384px"
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: "cover" }}
                   priority
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent flex flex-col justify-end p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Весь мир открыт для вас</h3>
-                  <p className="text-sm opacity-90">Профессиональная помощь в получении виз в более чем 50 стран мира.</p>
+                  <h3 className="text-2xl font-bold mb-2">Весь мир открыт</h3>
+                  <p className="text-sm opacity-90">
+                    Профессиональная помощь в получении виз в любую страну мира!
+                  </p>
                 </div>
               </div>
               <div className="lg:col-span-8 flex flex-col gap-8">
@@ -282,10 +306,14 @@ export default function Home() {
                       <h4 className="font-bold">Азия</h4>
                     </div>
                     <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                      <li>Вьетнам</li><li>Индонезия</li>
-                      <li>Камбоджа</li><li>Лаос</li>
-                      <li>Малайзия</li><li>Сингапур</li>
-                      <li>Таиланд</li><li>Филиппины</li>
+                      <li>Вьетнам</li>
+                      <li>Индонезия</li>
+                      <li>Камбоджа</li>
+                      <li>Лаос</li>
+                      <li>Малайзия</li>
+                      <li>Сингапур</li>
+                      <li>Таиланд</li>
+                      <li>Филиппины</li>
                     </ul>
                   </div>
                   <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
@@ -294,10 +322,14 @@ export default function Home() {
                       <h4 className="font-bold">Юго-Восточная Азия</h4>
                     </div>
                     <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                      <li>Китай</li><li>Япония</li>
-                      <li>Афганистан</li><li>Бангладеш</li>
-                      <li>Индия</li><li>Мальдивы</li>
-                      <li>Пакистан</li><li>Шри-Ланка</li>
+                      <li>Китай</li>
+                      <li>Япония</li>
+                      <li>Афганистан</li>
+                      <li>Бангладеш</li>
+                      <li>Индия</li>
+                      <li>Мальдивы</li>
+                      <li>Пакистан</li>
+                      <li>Шри-Ланка</li>
                     </ul>
                   </div>
                   <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
@@ -317,188 +349,90 @@ export default function Home() {
           </div>
         </section>
 
-
-        <section className="pt-10 w-full">
-          <div className="max-w-5xl mx-auto px-4">
-            <div className="bg-white rounded-3xl overflow-hidden flex flex-col md:flex-row border border-slate-200">
-              <div className="md:w-1/2 p-6 lg:p-10 bg-primary text-white">
-                <h2 className="text-4xl font-black mb-6">Оставить заявку на услугу</h2>
-                <p className="opacity-90 mb-8">Получите бесплатную консультацию по оформлению виз и миграционным вопросам. Мы ответим на все ваши вопросы в течение 15 минут.</p>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <Phone className="opacity-70" size={20} />
-                    <span>+7 (777) 000-00-00</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <Mail className="opacity-70" size={20} />
-                    <span>info@ozelim.kz</span>
-                  </div>
-                </div>
-                <div className="text-white">
-                  <p className="opacity-90 mt-4">
-                    Или свяжитесь с нами любым удобным Вам способом
-                  </p>
-                <div className="my-6 flex space-x-4">
-                  <a
-                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
-                    href="#"
-                  >
-                    <MessageCircle className="mr-2 text-emerald-300 h-5 w-5" />
-                    WhatsApp
-                  </a>
-                  <a
-                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
-                    href="#"
-                  >
-                    <SendPlaneIcon className="mr-2 text-emerald-300 h-5 w-5" />
-                    Telegram
-                  </a>
-                </div>
-
-              </div>
-              </div>
-              <div className="md:w-1/2 p-6 lg:p-16 space-y-6 bg-white ">
-                <div>
-                  <label className="block text-sm font-bold mb-2">Имя</label>
-                  <input className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow" placeholder="Введите ваше имя" type="text" />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-2">№ телефона</label>
-                  <input className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow" placeholder="+7 (___) ___-__-__" type="tel" />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-2">Выбрать услугу</label>
-                  <select className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow">
-                    <option>Оформление визы</option>
-                    <option>ВНЖ / ПМЖ</option>
-                    <option>ИИН / Банковская карта</option>
-                    <option>Трудоустройство за рубежом</option>
-                  </select>
-                </div>
-                <button className="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-xl font-bold soft-shadow shadow-lg transition-all">Отправить заявку</button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div className="pt-10">
+          <BidForm />
+        </div>
 
         <section className="pt-10">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold tracking-tight mb-6">Доп.услуги</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-6">
+              Дополнительные услуги
+            </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <HeartPulse size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Страхование</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">Оформление медицинских страховых полисов для выезда за рубеж и пребывания в РК в соответствии с международными стандартами.</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  Оформление медицинских страховых полисов для выезда за рубеж и
+                  пребывания в РК в соответствии с международными стандартами.
+                </p>
               </div>
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <BadgeCheck size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Работа за рубежом</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">Помощь в поиске легального трудоустройства в странах Европы, Азии и Америки. Полное документальное сопровождение.</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  Помощь в поиске легального трудоустройства в странах Европы,
+                  Азии и Америки. Полное документальное сопровождение.
+                </p>
               </div>
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <Headphones size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Вызов специалиста</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">Консультация нашего эксперта с выездом в ваш офис или на дом для сбора документов и заполнения анкет.</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  Консультация нашего эксперта с выездом в ваш офис или на дом
+                  для сбора документов и заполнения анкет.
+                </p>
               </div>
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <ShieldCheck size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Проверка документов</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">Профессиональный аудит вашего пакета документов для исключения рисков отказа в получении визы или РВП.</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  Профессиональный аудит вашего пакета документов для исключения
+                  рисков отказа в получении визы или РВП.
+                </p>
               </div>
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <UsersRound size={28} />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Услуги для граждан РФ</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">Специализированная помощь в получении ИИН, открытии банковских карт и оформлении ВНЖ для граждан Российской Федерации.</p>
+                <h3 className="text-xl font-bold mb-3">
+                  Услуги для граждан РФ
+                </h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  Специализированная помощь в получении ИИН, открытии банковских
+                  карт и оформлении ВНЖ для граждан Российской Федерации.
+                </p>
               </div>
               <div className="bg-white  p-8 rounded-2xl border border-slate-200 hover:-translate-y-1 transition-all">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
                   <Hotel size={28} />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Бронирование отелей</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6">Подбор и бронирование отелей и курортных баз по всему миру по эксклюзивным корпоративным ценам.</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">
+                  Подбор и бронирование отелей и курортных баз по всему миру по
+                  эксклюзивным корпоративным ценам.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-
-        <section className="pt-10 w-full">
-          <div className="max-w-5xl mx-auto px-4">
-            <div className="bg-white rounded-3xl overflow-hidden flex flex-col md:flex-row border border-slate-200">
-              <div className="md:w-1/2 p-6 lg:p-10 bg-primary text-white">
-                <h2 className="text-4xl font-black mb-6">Оставить заявку на услугу</h2>
-                <p className="opacity-90 mb-8">Получите бесплатную консультацию по оформлению виз и миграционным вопросам. Мы ответим на все ваши вопросы в течение 15 минут.</p>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <Phone className="opacity-70" size={20} />
-                    <span>+7 (777) 000-00-00</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <Mail className="opacity-70" size={20} />
-                    <span>info@ozelim.kz</span>
-                  </div>
-                </div>
-                <div className="text-white">
-                  <p className="opacity-90 mt-4">
-                    Или свяжитесь с нами любым удобным Вам способом
-                  </p>
-                <div className="my-6 flex space-x-4">
-                  <a
-                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
-                    href="#"
-                  >
-                    <MessageCircle className="mr-2 text-emerald-300 h-5 w-5" />
-                    WhatsApp
-                  </a>
-                  <a
-                    className="px-6 py-2 border border-white/50 rounded-lg flex items-center text-sm font-medium hover:bg-white/10 transition"
-                    href="#"
-                  >
-                    <SendPlaneIcon className="mr-2 text-emerald-300 h-5 w-5" />
-                    Telegram
-                  </a>
-                </div>
-
-              </div>
-              </div>
-              <div className="md:w-1/2 p-6 lg:p-16 space-y-6 bg-white ">
-                <div>
-                  <label className="block text-sm font-bold mb-2">Имя</label>
-                  <input className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow" placeholder="Введите ваше имя" type="text" />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-2">№ телефона</label>
-                  <input className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow" placeholder="+7 (___) ___-__-__" type="tel" />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-2">Выбрать услугу</label>
-                  <select className="w-full px-4 py-3 rounded-xl bg-background-light border-transparent focus:border-primary focus:ring-0 shadow">
-                    <option>Оформление визы</option>
-                    <option>ВНЖ / ПМЖ</option>
-                    <option>ИИН / Банковская карта</option>
-                    <option>Трудоустройство за рубежом</option>
-                  </select>
-                </div>
-                <button className="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-xl font-bold soft-shadow shadow-lg transition-all">Отправить заявку</button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div className="pt-10">
+          <BidForm />
+        </div>
 
         <section className="pt-10" id="why-us">
-          <div className="grid lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-1 bg-primary p-12 rounded-lg flex items-center justify-center">
-              <h2 className="text-4xl font-bold text-center text-white">
+          <div className="flex gap-12 items-center">
+            <div className="bg-primary rounded-lg flex items-center justify-center h-min p-6">
+              <h2 className="text-3xl font-bold text-center text-white whitespace-nowrap">
                 Почему мы?
               </h2>
             </div>
@@ -553,6 +487,10 @@ export default function Home() {
           </div>
         </section>
 
+        <div className="py-10 lg:py-16">
+          <PaymentVariants />
+        </div>
+
         <section className="py-10">
           <div className="max-w-7xl mx-auto">
             <div className="flex mb-6">
@@ -568,14 +506,23 @@ export default function Home() {
                     data-alt="Stack of legal migration documents on a desk"
                     fill
                     sizes="(max-width:1024px) 100vw, 384px"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: "cover" }}
                     priority
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">Гайд</div>
+                  <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">
+                    Гайд
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Как получить ВНЖ в Казахстане в 2026 году?</h3>
-                <p className="text-slate-500 text-sm line-clamp-3 mb-4">Подробная инструкция по сбору документов, срокам рассмотрения и основным требованиям для получения вида на жительство...</p>
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-400">12 Октября 2026</span>
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                  Как получить ВНЖ в Казахстане в 2026 году?
+                </h3>
+                <p className="text-slate-500 text-sm line-clamp-3 mb-4">
+                  Подробная инструкция по сбору документов, срокам рассмотрения
+                  и основным требованиям для получения вида на жительство...
+                </p>
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                  12 Октября 2026
+                </span>
               </div>
               <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
                 <div className="aspect-video rounded-2xl overflow-hidden mb-6 soft-shadow relative shadow">
@@ -586,14 +533,23 @@ export default function Home() {
                     data-alt="Business professionals in a corporate meeting setting"
                     fill
                     sizes="(max-width:1024px) 100vw, 384px"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: "cover" }}
                     priority
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">Бизнес</div>
+                  <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">
+                    Бизнес
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Digital Nomad Visa: Новые возможности для IT</h3>
-                <p className="text-slate-500 text-sm line-clamp-3 mb-4">Казахстан запустил программу для цифровых кочевников. Разбираемся, кто может претендовать и какие льготы это дает...</p>
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-400">05 Октября 2026</span>
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                  Digital Nomad Visa: Новые возможности для IT
+                </h3>
+                <p className="text-slate-500 text-sm line-clamp-3 mb-4">
+                  Казахстан запустил программу для цифровых кочевников.
+                  Разбираемся, кто может претендовать и какие льготы это дает...
+                </p>
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                  05 Октября 2026
+                </span>
               </div>
               <div className="group cursor-pointer bg-white rounded-2xl border border-slate-200 p-4">
                 <div className="aspect-video rounded-2xl overflow-hidden mb-6 soft-shadow relative shadow">
@@ -604,19 +560,27 @@ export default function Home() {
                     data-alt="Gavel and law books representing legal services"
                     fill
                     sizes="(max-width:1024px) 100vw, 384px"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: "cover" }}
                     priority
                   />
-                  <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">Законодательство</div>
+                  <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-lg text-xs font-bold text-primary">
+                    Законодательство
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Изменения в миграционном учете</h3>
-                <p className="text-slate-500 text-sm line-clamp-3 mb-4">Важные поправки в законодательстве РК, которые вступают в силу с начала следующего месяца. О чем нужно знать иностранцам...</p>
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-400">28 Сентября 2026</span>
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                  Изменения в миграционном учете
+                </h3>
+                <p className="text-slate-500 text-sm line-clamp-3 mb-4">
+                  Важные поправки в законодательстве РК, которые вступают в силу
+                  с начала следующего месяца. О чем нужно знать иностранцам...
+                </p>
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                  28 Сентября 2026
+                </span>
               </div>
             </div>
           </div>
         </section>
-
       </main>
     </div>
   );
@@ -631,6 +595,8 @@ import {
   CheckCircle,
   Eye,
 } from "lucide-react";
+import BidForm from "@/components/bid-form";
+import PaymentVariants from "@/components/payment-variants";
 
 // Custom icons that are similar to WhatsApp/Telegram
 function SendPlaneIcon({ className }) {

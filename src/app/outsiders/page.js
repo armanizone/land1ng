@@ -24,6 +24,8 @@ import {
   Laptop,
 } from "lucide-react";
 import Link from "next/link";
+import PaymentVariants from "@/components/payment-variants";
+import BidForm from "@/components/bid-form";
 
 export default function page() {
   return (
@@ -142,51 +144,58 @@ export default function page() {
           <div className="flex flex-col md:flex-row items-center bg-background-light overflow-hidden">
             <div className="relative w-full md:w-5/12">
               <div className="absolute inset-0 bg-opacity-50 flex items-end p-8 md:bg-opacity-0">
-                <div className="bg-gray-800 text-white p-6 rounded-lg md:translate-x-1/2">
-                  <h3 className="text-2xl font-bold">Галютина Виктория</h3>
-                  <p className="text-gray-300">Директор офиса</p>
+                <div className="bg-primary text-white p-4 rounded-lg md:translate-x-3/5">
+                  <h3 className="text-2xl font-bold">Мукатаева Айгуль</h3>
+                  <p className="text-gray-200">Директор офиса</p>
+                  <p className="text-gray-300 text-sm">
+                    опыт работы более 20 лет
+                  </p>
                 </div>
               </div>
               <Image
-                alt="Фотография директора офиса Виктории Галютиной"
-                className="w-full h-full object-cover rounded-xl"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiFE9Sdd0jymYHWXqGTBSe8hqI1mFxOdSTcf9Xpjp641j0h8wXFp55P0myU-RJXutrxou7HGmmxi1rRSPBOwNYXSBcQcvsoVQmopbGkpnZ6EkRAcFceTH44e3uBXA62FOLgcEpzrsrrlgfB9g8aVMWT8Y09kQdIHjQmVaH8zUSJpnHKAzstI76IoIrfkZUORMKCd80BKEW6BEiVbunfVAOSgpqXxWvMGGaFY4bOIs-eAbhYosR38VK7G0-BYuBJG2U8igBzgIcXjBq"
+                alt="Фотография директора офиса Мукатаева Айгуль"
+                className="w-full object-contain rounded-xl"
+                src={"/mukataeva-aigul.jpeg"}
                 width={550}
-                height={730}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                height={240}
+                style={{ width: "100%", height: "540px", objectFit: "cover" }}
                 priority
               />
             </div>
             <div className="p-8 md:p-12 md:pl-24 w-full md:w-7/12">
               <h2 className="text-3xl font-bold mb-6 text-gray-900">
-                Здравствуйте, уважаемые иностранные граждане!
+                Здравствуйте!
               </h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Меня зовут Виктория Галютина, генеральный директор Ozelim, и я
-                  рада приветствовать вас на ozelim.kz. Наша цель — сделать вашу
-                  жизнь в Казахстане проще и комфортнее. И за последние
-                  несколько лет мы помогли сотням иностранных граждан оформить
-                  РВП, ВНЖ, получить рабочие визы и гражданство РК.
+                  <span className="font-semibold text-primary">
+                    Наш визовый центр
+                  </span>{" "}
+                  помогает иностранным гражданам оформить документы для
+                  проживания и работы в Казахстане.
                 </p>
-                <p>
-                  Ozelim — это команда профессионалов, знающих все тонкости
-                  миграционных процессов Республики Казахстан. Мы предлагаем
-                  индивидуальные решения, быструю подготовку документов и
-                  поддержку на каждом шаге. Наши клиенты ценят нас за
-                  эффективность, а положительные рекомендации — это лучшая
-                  оценка нашей деятельности!
-                </p>
-                <p>
-                  Прозрачность, открытость и законность — это наши приоритеты.
-                  Мы готовы подробно изучить вашу задачу, подобрать идеальное
-                  персональное решение. С каждым клиентом заключаем договор,
-                  куда включены все необходимые услуги и гарантии.
-                </p>
-                <p>
-                  Обращайтесь в Ozelim, приходите в наш уютный офис в Алматы. Мы
-                  с радостью окажем вам помощь и поддержку в решении любого
-                  миграционного вопроса.
+                <div className="rounded-xl bg-slate-50 border border-slate-200 p-6 mb-3 text-base">
+                  <span className="font-bold block mb-3 text-slate-800">
+                    Мы помогаем с:
+                  </span>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li>визами</li>
+                    <li>
+                      оформлением документов на{" "}
+                      <span className="font-semibold">РВП</span>,{" "}
+                      <span className="font-semibold">ВНЖ</span>
+                    </li>
+                    <li>регистрацией</li>
+                    <li>бронированием отелей в РК</li>
+                    <li>оформлением документов на гражданство РК</li>
+                    <li>проверкой документов</li>
+                    <li>разрешением на работу</li>
+                    <li>страхованием</li>
+                  </ul>
+                </div>
+                <p>Мы объясним весь процесс и поможем подготовить документы.</p>
+                <p className="font-semibold text-primary">
+                  Обращайтесь — будем рады помочь!
                 </p>
               </div>
             </div>
@@ -416,11 +425,11 @@ export default function page() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 items-start">
-            <div className="bg-gray-800 text-white p-8 rounded-lg md:sticky md:top-24">
+            <div className="bg-primary text-white p-8 rounded-lg md:sticky md:top-24">
               <h2 className="text-4xl font-bold">Почему мы?</h2>
             </div>
             <div className="md:col-span-2 grid sm:grid-cols-2 gap-x-12 gap-y-10">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 border border-slate-200 bg-white p-3 rounded-xl">
                 <CheckCircle2 className="text-3xl text-primary mt-1 shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -432,7 +441,7 @@ export default function page() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 border border-slate-200 bg-white p-3 rounded-xl">
                 <CheckCircle2 className="text-3xl text-primary mt-1 shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -445,7 +454,7 @@ export default function page() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 border border-slate-200 bg-white p-3 rounded-xl">
                 <CheckCircle2 className="text-3xl text-primary mt-1 shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -458,7 +467,7 @@ export default function page() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 border border-slate-200 bg-white p-3 rounded-xl">
                 <CheckCircle2 className="text-3xl text-primary mt-1 shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -471,7 +480,7 @@ export default function page() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 border border-slate-200 bg-white p-3 rounded-xl">
                 <CheckCircle2 className="text-3xl text-primary mt-1 shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -483,7 +492,7 @@ export default function page() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 border border-slate-200 bg-white p-3 rounded-xl">
                 <CheckCircle2 className="text-3xl text-primary mt-1 shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -495,7 +504,7 @@ export default function page() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 border border-slate-200 bg-white p-3 rounded-xl">
                 <CheckCircle2 className="text-3xl text-primary mt-1 shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -507,7 +516,7 @@ export default function page() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 border border-slate-200 bg-white p-3 rounded-xl">
                 <CheckCircle2 className="text-3xl text-primary mt-1 shrink-0" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -527,57 +536,50 @@ export default function page() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900">Гарантии</h2>
-            <a
-              className="bg-gray-800 text-white py-3 px-6 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-700 transition-colors"
-              href="#"
-            >
-              Все гарантии
-              <ArrowRight />
-            </a>
+            <h2 className="text-3xl font-bold">Гарантии</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col">
+            <div className="bg-white p-6 rounded-lg flex flex-col border border-slate-200">
               <RefreshCw className="text-4xl text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">
+              <h3 className="text-lg font-bold mb-2">
                 Повторная подача без ограничений
               </h3>
-              <p className="text-gray-300 grow">
+              <p className="text-gray-600 grow">
                 Если документы не прошли проверку с первого раза, наши
                 специалисты быстро выявят и исправят все недочеты, добиваясь
                 успешного принятия вашего пакета государственными органами
                 Казахстана.
               </p>
             </div>
-            <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col">
-              <BadgeCheck className="text-4xl text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">
-                Прозрачная стоимость без сюрпризов
-              </h3>
-              <p className="text-gray-300 grow">
+            <div className="bg-white p-6 rounded-lg flex flex-col border border-slate-200">
+                <BadgeCheck className="text-4xl text-primary mb-4 shrink-0" />
+                <h3 className="text-lg font-bold mb-2">
+                  Прозрачная стоимость без сюрпризов
+                </h3>
+              <p className="text-gray-600 grow">
                 Цена услуг фиксируется на этапе заключения договора и остается
                 неизменной до завершения всего процесса оформления. Никаких
                 скрытых платежей и неожиданных доплат.
               </p>
             </div>
-            <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col">
+            <div className="bg-white p-6 rounded-lg flex flex-col border border-slate-200">
               <ShieldCheck className="text-4xl text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">
+              <h3 className="text-lg font-bold mb-2">
                 Документы, полностью соответствующие требованиям
               </h3>
-              <p className="text-gray-300 grow">
+              <p className="text-gray-600 grow">
                 Мы тщательно проверяем каждую деталь, чтобы исключить ошибки и
                 несоответствия. Все документы оформляются в строгом соответствии
                 с законодательством, что обеспечивает их безупречное принятие
                 госорганами.
               </p>
             </div>
-            <div className="bg-gray-800 text-white p-8 rounded-lg flex flex-col">
+            <div className="bg-white p-6 rounded-lg flex flex-col border border-slate-200">
               <ClipboardCheck className="text-4xl text-primary mb-4" />
-              <h3 className="text-xl font-bold mb-2">
+              <h3 className="text-lg font-bold mb-2">
                 Гарантированный результат при соблюдении всех условий
               </h3>
-              <p className="text-gray-300 grow">
+              <p className="text-gray-600 grow">
                 Мы уверены в качестве своей работы и гарантируем, что правильно
                 подготовленный пакет документов примут на рассмотрение. Если все
                 требования выполнены, вы получите желаемый результат без
@@ -587,37 +589,14 @@ export default function page() {
           </div>
         </div>
       </section>
-      <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between items-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900">Способы оплаты</h2>
-            <a
-              className="bg-gray-800 text-white py-3 px-6 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-700 transition-colors"
-              href="#"
-            >
-              Все способы
-              <ArrowRight />
-            </a>
-          </div>
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="bg-gray-100 rounded-full py-4 px-8 flex items-center gap-4">
-              <Banknote className="text-3xl text-primary" />
-              <span className="font-medium">Наличными</span>
-            </div>
-            <div className="bg-gray-100 rounded-full py-4 px-8 flex items-center gap-4">
-              <CreditCard className="text-3xl text-primary" />
-              <span className="font-medium">
-                Банковской картой (безналичный расчет)
-              </span>
-            </div>
-            <div className="bg-gray-100 rounded-full py-4 px-8 flex items-center gap-4">
-              <Landmark className="text-3xl text-primary" />
-              <span className="font-medium">По реквизитам (для юр. лиц)</span>
-            </div>
-          </div>
-        </div>
+      <section className="py-10 md:py-16">
+        <PaymentVariants />
       </section>
-      <section className="py-16 md:py-24">
+
+      <div className="pt-10">
+        <BidForm />
+      </div>
+      {/* <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 bg-gray-800 rounded-lg overflow-hidden text-white">
             <div className="p-8 md:p-12 relative">
@@ -713,7 +692,7 @@ export default function page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

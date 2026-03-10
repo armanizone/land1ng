@@ -38,7 +38,7 @@ export const Footer = () => {
             </div>
             <p className="mt-6 flex items-start text-slate-600">
               <MapPin className="text-primary mr-2 w-5 h-5 shrink-0" />
-              г. Павлодар, улица Гагарина, 50, офис 999.
+              город Астана
             </p>
           </div>
         </div>
@@ -46,21 +46,21 @@ export const Footer = () => {
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
             <div>
               <div className="text-xl font-bold text-slate-800">
-                OZELIM
+                Visapro
               </div>
               <p className="text-sm text-slate-500 mt-1">
-              Ассоциация некоммерческая организация
+              Официальный партнер - Ассоциация туристов Казахстана
               </p>
             </div>
             <div className="text-slate-800">
-              <p className="text-2xl font-bold">+7 000 000 0000</p>
-              <p className="text-sm">info@ozelim.kz</p>
+              <p className="text-2xl font-bold">+7 707 367 5161</p>
+              <p className="text-sm">a.nsk_75@bk.ru</p>
             </div>
             <div className="text-slate-600 text-sm">
               <p className="font-semibold text-slate-800">
                 Режим работы
               </p>
-              <p>пн-пт 10:00 - 19:00, сб 11:00 - 16:00</p>
+              <p>Онлайн 24/7</p>
             </div>
             <div className="flex items-center space-x-4">
               <a
@@ -68,12 +68,6 @@ export const Footer = () => {
                 href="#"
               >
                 <Banknote className="w-5 h-5" />
-              </a>
-              <a
-                className="h-8 w-8 rounded-full bg-emerald-500 flex items-center justify-center text-white"
-                href="#"
-              >
-                <Send className="w-5 h-5" />
               </a>
               <div className="flex items-center space-x-2 text-sm">
                 <Image
@@ -84,16 +78,6 @@ export const Footer = () => {
                   height={24}
                   style={{ height: "1rem", width: "auto" }}
                 />
-                <div className="flex items-center">
-                  <span>5.0</span>
-                  <div className="flex text-yellow-400 ml-1">
-                    <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400" /> 
-                    <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400" />
-                    <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400" />
-                    <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400" />
-                    <Star className="w-4 h-4 fill-yellow-400 stroke-yellow-400" />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
