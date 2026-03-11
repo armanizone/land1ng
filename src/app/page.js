@@ -231,7 +231,7 @@ export default function Home() {
                   style={{ objectFit: "cover" }}
                   priority
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent flex flex-col justify-end p-8 text-white">
+                <div className="absolute inset-0 to-transparent flex flex-col justify-end p-8 text-white">
                   <h3 className="text-2xl font-bold mb-2">Весь мир открыт</h3>
                   <p className="text-sm opacity-90">
                     Профессиональная помощь в получении виз в любую страну мира!
