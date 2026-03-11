@@ -349,9 +349,9 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="pt-10">
+        {/* <div className="pt-10">
           <BidForm />
-        </div>
+        </div> */}
 
         <section className="pt-10">
           <div className="max-w-7xl mx-auto">
