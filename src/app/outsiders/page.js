@@ -73,7 +73,7 @@ export default function page() {
           </div>
         </section> */}
 
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-4">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-4 pt-6">
           <div>
             <span className="inline-block py-1 px-3 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">
               Ваш надежный гид в Казахстане
@@ -105,42 +105,16 @@ export default function page() {
             </div>
           </div>
 
-          <div className="relative grid grid-cols-2 gap-4">
+          <div className="relative gap-4">
             <div className="space-y-4">
-              <div className="rounded-2xl overflow-hidden h-64 soft-shadow shadow-lg bg-white">
+              <div className="rounded-2xl overflow-hidden h-96 soft-shadow shadow-lg bg-white">
                 <Image
                   alt="Almaty Architecture"
                   className="w-full h-full object-cover"
-                  src="/Picture1.jpg"
-                  height={200}
-                  width={200}
+                  src="/outsiders-hero.jpeg"
+                  height={500}
+                  width={500}
                   data-alt="Modern Almaty architecture reflecting city life"
-                  style={{ objectFit: "cover" }}
-                  priority
-                />
-              </div>
-              <div className="rounded-2xl overflow-hidden h-48 soft-shadow shadow-lg bg-white">
-                <Image
-                  alt="Passport Control"
-                  className="w-full h-full object-cover"
-                  src="/Picture2.jpg"
-                  height={200}
-                  width={200}
-                  data-alt="Officer checking international passport at customs"
-                  style={{ objectFit: "cover" }}
-                  priority
-                />
-              </div>
-            </div>
-            <div className="pt-12 space-y-4">
-              <div className="rounded-2xl overflow-hidden h-80 soft-shadow shadow-lg bg-white">
-                <Image
-                  alt="Business Consultation"
-                  className="w-full h-full object-cover"
-                  src="/Picture3.jpg"
-                  height={200}
-                  width={200}
-                  data-alt="Professional meeting between consultants and client"
                   style={{ objectFit: "cover" }}
                   priority
                 />
@@ -172,7 +146,7 @@ export default function page() {
                   priority
                 />
               </div>
-              <div className="p-8 md:p-12 md:pl-24 w-full md:w-7/12">
+              <div className="pt-6 md:p-12 md:pl-24 w-full md:w-7/12">
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">
                   Здравствуйте!
                 </h2>
@@ -215,7 +189,7 @@ export default function page() {
           </div>
         </section>
 
-        <section className="py-8">
+        <section className="py-8 mx-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-6">
               <div className="space-y-2">

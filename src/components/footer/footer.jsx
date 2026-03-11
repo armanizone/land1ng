@@ -42,7 +42,7 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="py-12 mt-12 border-t border-slate-200">
+        <div className="py-12 lg:mt-12 border-t border-slate-200">
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
             <div>
               <div className="text-xl font-bold text-slate-800">
@@ -62,26 +62,33 @@ export const Footer = () => {
               </p>
               <p>Онлайн 24/7</p>
             </div>
-            <div className="flex items-center space-x-4">
-              <a
-                className="h-8 w-8 rounded-full bg-emerald-500 flex items-center justify-center text-white"
-                href="#"
-              >
-                <Banknote className="w-5 h-5" />
-              </a>
-              <div className="flex items-center space-x-2 text-sm">
-                <Image
-                  alt="Google logo"
-                  className="h-4"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDmMJn42EKqhzMHWtQF_AlmG_sQNC27RpxJdFzCk9g-CRY9SjCmXZzCxnGacW0BjrSXZUx4jXt540LMEbk4yD3rVVWHng5fD-JcTmYwU00PgiETjinMZCH-oWyv_zWDpZ2yY6tc5-RFGbU87D4ZEaAWOIPVc94n7wHcYdGumokEoAgM8co4iD6wl9wD5CvtVYUtT1gsvK1RafRe7PFjjalIQG-vfPudM1kZ2lVQgL23eow1bW1f4wql2QsPuDlSHkqJEzYNN5kLSU"
-                  width={24}
-                  height={24}
-                  style={{ height: "1rem", width: "auto" }}
-                />
+            <div>
+              <h4 className="font-semibold text-slate-900 mb-3">
+                Мы в соц.сетях
+              </h4>
+              <div className="flex space-x-3">
+                <a
+                  className="text-slate-500 hover:text-primary"
+                  href="#"
+                >
+                  <Send className="h-6 w-6" />
+                </a>
+                <a
+                  className="text-slate-500 hover:text-primary"
+                  href="#"
+                >
+                  <Send className="h-6 w-6" />
+                </a>
+                <a
+                  className="text-slate-500 hover:text-primary"
+                  href="#"
+                >
+                  <Send className="h-6 w-6" />
+                </a>
               </div>
             </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-slate-200 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+          {/* <div className="mt-8 pt-8 border-t border-slate-200 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
             <div>
               <h4 className="font-semibold text-slate-900 mb-3">
                 О компании
@@ -136,32 +143,8 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-semibold text-slate-900 mb-3">
-                Мы в соц.сетях
-              </h4>
-              <div className="flex space-x-3">
-                <a
-                  className="text-slate-500 hover:text-primary"
-                  href="#"
-                >
-                  <Banknote className="h-6 w-6" />
-                </a>
-                <a
-                  className="text-slate-500 hover:text-primary"
-                  href="#"
-                >
-                  <Banknote className="h-6 w-6" />
-                </a>
-                <a
-                  className="text-slate-500 hover:text-primary"
-                  href="#"
-                >
-                  <Send className="h-6 w-6" />
-                </a>
-              </div>
-            </div>
-          </div>
+
+          </div> */}
           <div className="mt-8 pt-8 border-t border-slate-200 text-center text-sm text-slate-500">
             <p>© 2014 - 2026 Ассоциация некоммерческая организация «Ozelim»</p>
           </div>

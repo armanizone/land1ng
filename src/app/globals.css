@@ -17,8 +17,8 @@ html {
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  /* Changed to match new primary (#FF3F7F) */
-  --primary: #FF3F7F;
+  /* Changed to match new primary (#dca7f2) */
+  --primary: #dca7f2;
   --primary-foreground: oklch(0.145 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -38,7 +38,7 @@ html {
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #FF3F7F; /* Match main primary color in sidebar-primary */
+  --sidebar-primary: #dca7f2; /* Match main primary color in sidebar-primary */
   --sidebar-primary-foreground: oklch(0.145 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
@@ -47,7 +47,7 @@ html {
 }
 
 @theme {
-  --color-primary: #FF3F7F; /* HEX for new primary */
+  --color-primary: #dca7f2; /* HEX for new primary */
 }
 
 @theme inline {
@@ -115,7 +115,7 @@ body {
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
   /* Changed to use new primary for dark mode */
-  --primary: #FF3F7F;
+  --primary: #dca7f2;
   --primary-foreground: oklch(0.145 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -134,7 +134,7 @@ body {
   --chart-5: oklch(0.424 0.199 265.638);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: #FF3F7F;
+  --sidebar-primary: #dca7f2;
   --sidebar-primary-foreground: oklch(0.145 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);

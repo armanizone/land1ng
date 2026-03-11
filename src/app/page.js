@@ -214,136 +214,172 @@ export default function Home() {
           </div>
         </section> */}
 
-        <section className="pt-10 overflow-hidden">
+        <section className="overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tight mb-6">
               Визы из Казахстана
             </h2>
-            <div className="grid lg:grid-cols-12 gap-12">
-              <div className="lg:col-span-4 rounded-3xl overflow-hidden relative min-h-[500px] bg-white">
+            <div className="grid lg:grid-cols-12 gap-6">
+              {/* Left: Visa types */}
+              <div className="lg:col-span-5 flex flex-col justify-center">
+                <div className="bg-white rounded-2xl p-6 border border-slate-200">
+                  <h4 className="font-bold text-lg mb-3">Виды виз</h4>
+                  <ul className="grid grid-cols-1 sm:grid-cols-1 gap-x-6 gap-y-5 text-sm font-medium">
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <BadgeDollarSign className="text-primary shrink-0" size={16} />
+                        <span>Дипломатические и служебные визы</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <TrendingUp className="text-primary shrink-0" size={16} />
+                        <span>Инвестиционные визы</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <Briefcase className="text-primary shrink-0" size={16} />
+                        <span>Бизнес-визы</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <Plane className="text-primary shrink-0" size={16} />
+                        <span>Туристические визы</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <Stethoscope className="text-primary shrink-0" size={16} />
+                        <span>Визы на лечение, частные и иные краткосрочные цели</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <GraduationCap className="text-primary shrink-0" size={16} />
+                        <span>Студенческие и учебные визы</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <BadgeDollarSign className="text-primary shrink-0" size={16} />
+                        <span>Рабочие визы</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <Users className="text-primary shrink-0" size={16} />
+                        <span>Визы на воссоединение семьи</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex items-center gap-2">
+                        <HomeIcon className="text-primary shrink-0" size={16} />
+                        <span>Визы для ПМЖ</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-6 block lg:hidden">
+                  {/* Мотивационное сообщение для мобильного/планшета */}
+                  <div className="relative rounded-2xl overflow-hidden min-h-[220px] bg-white">
+                    <Image
+                      alt="World Map"
+                      className="w-full h-full object-cover"
+                      src={"/visa-from-kz.jpeg"}
+                      data-alt="Stylized world map showing global travel routes"
+                      fill
+                      // sizes="(max-width:1024px) 100vw, 384px"
+                      style={{ objectFit: "cover" }}
+                      priority
+                    />
+                    <div className="absolute inset-0 to-transparent flex flex-col justify-end p-8 text-white bg-gradient-to-t from-black/50 via-transparent">
+                      <h3 className="text-2xl font-bold mb-2">Весь мир открыт</h3>
+                      <p className="text-sm opacity-90">
+                        Профессиональная помощь в получении виз в любую страну мира!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Right: Фото во всю высоту блока */}
+              <div className="lg:col-span-7 relative hidden lg:block min-h-[400px] rounded-3xl overflow-hidden">
                 <Image
                   alt="World Map"
                   className="w-full h-full object-cover"
                   src={"/visa-from-kz.jpeg"}
                   data-alt="Stylized world map showing global travel routes"
                   fill
-                  sizes="(max-width:1024px) 100vw, 384px"
+                  sizes="(max-width:1024px) 100vw, 756px"
                   style={{ objectFit: "cover" }}
                   priority
                 />
-                <div className="absolute inset-0 to-transparent flex flex-col justify-end p-8 text-white">
+                <div className="absolute inset-0 to-transparent flex flex-col justify-end p-8 text-white bg-gradient-to-t from-black/40 via-transparent">
                   <h3 className="text-2xl font-bold mb-2">Весь мир открыт</h3>
                   <p className="text-sm opacity-90">
                     Профессиональная помощь в получении виз в любую страну мира!
                   </p>
                 </div>
               </div>
-              <div className="lg:col-span-8 flex flex-col gap-8">
-                {/* Visa types list */}
-                <div className="bg-white rounded-2xl p-6 border border-slate-200 mb-2">
-                  <h4 className="font-bold text-lg mb-3">Виды виз</h4>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm font-medium">
-                    <li className="flex items-center gap-2">
-                      <Plane className="text-primary" size={16} />
-                      Туристические визы
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <BadgeDollarSign className="text-primary" size={16} />
-                      Рабочие визы
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <GraduationCap className="text-primary" size={16} />
-                      Студенческие и учебные визы
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Briefcase className="text-primary" size={16} />
-                      Бизнес-визы
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Users className="text-primary" size={16} />
-                      Визы на воссоединение семьи
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <TrendingUp className="text-primary" size={16} />
-                      Инвестиционные визы
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Stethoscope className="text-primary" size={16} />
-                      Визы на лечение
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <HomeIcon className="text-primary" size={16} />
-                      Визы для ПМЖ
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Monitor className="text-primary" size={16} />
-                      Электронная
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Laptop className="text-primary" size={16} />
-                      Digital Nomad Visa
-                    </li>
-                  </ul>
+            </div>
+            {/* Countries grid goes UNDER the main content */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+              <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                  <Euro className="text-primary shrink-0" size={20} />
+                  <h4 className="font-bold">Европа</h4>
                 </div>
-                {/* Countries list */}
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
-                    <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
-                      <Euro className="text-primary" size={20} />
-                      <h4 className="font-bold">Европа</h4>
-                    </div>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center gap-2">Германия</li>
-                      <li className="flex items-center gap-2">Франция</li>
-                      <li className="flex items-center gap-2">Испания</li>
-                      <li className="flex items-center gap-2">Италия</li>
-                      <li className="flex items-center gap-2">Англия</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
-                    <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
-                      <Landmark className="text-primary" size={20} />
-                      <h4 className="font-bold">Азия</h4>
-                    </div>
-                    <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                      <li>Вьетнам</li>
-                      <li>Индонезия</li>
-                      <li>Камбоджа</li>
-                      <li>Лаос</li>
-                      <li>Малайзия</li>
-                      <li>Сингапур</li>
-                      <li>Таиланд</li>
-                      <li>Филиппины</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
-                    <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
-                      <Building2 className="text-primary" size={20} />
-                      <h4 className="font-bold">Юго-Восточная Азия</h4>
-                    </div>
-                    <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-                      <li>Китай</li>
-                      <li>Япония</li>
-                      <li>Афганистан</li>
-                      <li>Бангладеш</li>
-                      <li>Индия</li>
-                      <li>Мальдивы</li>
-                      <li>Пакистан</li>
-                      <li>Шри-Ланка</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
-                    <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
-                      <Globe className="text-primary" size={20} />
-                      <h4 className="font-bold">Южная Америка (США/Канада)</h4>
-                    </div>
-                    <ul className="space-y-2 text-sm">
-                      <li>США</li>
-                      <li>Канада</li>
-                      <li>Австралия</li>
-                    </ul>
-                  </div>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">Германия</li>
+                  <li className="flex items-center gap-2">Франция</li>
+                  <li className="flex items-center gap-2">Испания</li>
+                  <li className="flex items-center gap-2">Италия</li>
+                  <li className="flex items-center gap-2">Англия</li>
+                </ul>
+              </div>
+              <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                  <Landmark className="text-primary shrink-0" size={20} />
+                  <h4 className="font-bold">Азия</h4>
                 </div>
+                <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                  <li>Вьетнам</li>
+                  <li>Индонезия</li>
+                  <li>Камбоджа</li>
+                  <li>Лаос</li>
+                  <li>Малайзия</li>
+                  <li>Сингапур</li>
+                  <li>Таиланд</li>
+                  <li>Филиппины</li>
+                </ul>
+              </div>
+              <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                  <Building2 className="text-primary shrink-0" size={20} />
+                  <h4 className="font-bold">Юго-Восточная Азия</h4>
+                </div>
+                <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                  <li>Китай</li>
+                  <li>Япония</li>
+                  <li>Афганистан</li>
+                  <li>Бангладеш</li>
+                  <li>Индия</li>
+                  <li>Мальдивы</li>
+                  <li>Пакистан</li>
+                  <li>Шри-Ланка</li>
+                </ul>
+              </div>
+              <div className="space-y-4 bg-white rounded-2xl p-6 border border-slate-200">
+                <div className="flex items-center gap-3 pb-2 border-b border-primary/20">
+                  <Globe className="text-primary shrink-0" size={20} />
+                  <h4 className="font-bold">Южная Америка (США/Канада)</h4>
+                </div>
+                <ul className="space-y-2 text-sm">
+                  <li>США</li>
+                  <li>Канада</li>
+                  <li>Австралия</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -430,7 +466,7 @@ export default function Home() {
         </div>
 
         <section className="pt-10" id="why-us">
-          <div className="flex gap-12 items-center">
+          <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="bg-primary rounded-lg flex items-center justify-center h-min p-6">
               <h2 className="text-3xl font-bold text-center text-white whitespace-nowrap">
                 Почему мы?
