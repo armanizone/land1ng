@@ -20,7 +20,7 @@ export default function Header () {
 
   return (
     <>
-      <header className="py-2 lg:py-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-">
+      <header className="py-2 lg:py-4 max-w-7xl mx-auto px-4">
         <div className="flex md:justify-between items-center border-b border-slate-200 pb-4 mb-4">
           <div className="w-full flex justify-between md:w-min items-center space-x-8">
             <div className="text-xl font-bold text-slate-800">
