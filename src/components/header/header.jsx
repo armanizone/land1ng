@@ -19,10 +19,7 @@ import VisaCalculatorModal, {
 } from "../visa-calculator/visa-calculator-modal";
 
 const gradStyle = {
-  background: "linear-gradient(135deg, #c084fc 0%, #9333ea 45%, #6b21a8 100%)",
-  WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  backgroundClip: "text",
+  color: "#5a2b8a",
 };
 
 export default function Header() {

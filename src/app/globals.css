@@ -18,6 +18,7 @@ html {
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0.014 292);
   /* Changed to match new primary (#dca7f2) */
+  /* --primary: #b300ff; */
   --primary: #b300ff;
   --primary-foreground: oklch(0.145 0 0);
   --secondary: oklch(0.97 0 0);
@@ -160,6 +161,9 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6, label {
+    color: #5a2b8a;
   }
   html {
     @apply font-sans;

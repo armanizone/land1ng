@@ -33,10 +33,7 @@ import { VisaCalculatorButton } from "@/components/visa-calculator/visa-calculat
 
 /* ─── design tokens ─── */
 const gradStyle = {
-  background: "linear-gradient(135deg, #c084fc 0%, #9333ea 45%, #6b21a8 100%)",
-  WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  backgroundClip: "text",
+  color: "#5a2b8a",
 };
 const accentBar = {
   background: "linear-gradient(90deg, #dca7f2, #a855f7, #7c3aed)",
@@ -101,7 +98,7 @@ function PageDiagBg({ bands = 7 }) {
                   [edge]: "-6%",
                   width: "58%",
                   height: "180%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.13) 0%,rgba(147,51,234,.09) 55%,transparent 85%)`,
+                  background: `linear-gradient(${gDir},rgba(192,132,252,.15) 0%,rgba(147,51,234,.11) 55%,transparent 85%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "64px",
@@ -114,7 +111,7 @@ function PageDiagBg({ bands = 7 }) {
                   [edge]: "4%",
                   width: "40%",
                   height: "160%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.17) 0%,rgba(147,51,234,.11) 55%,transparent 90%)`,
+                  background: `linear-gradient(${gDir},rgba(192,132,252,.19) 0%,rgba(147,51,234,.13) 55%,transparent 90%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "44px",
@@ -128,7 +125,7 @@ function PageDiagBg({ bands = 7 }) {
                   [edge]: "15%",
                   width: "24%",
                   height: "140%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.21) 0%,rgba(147,51,234,.13) 50%,transparent 85%)`,
+                  background: `linear-gradient(${gDir},rgba(192,132,252,.23) 0%,rgba(147,51,234,.15) 50%,transparent 85%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "28px",
@@ -143,7 +140,7 @@ function PageDiagBg({ bands = 7 }) {
                   width: "2px",
                   height: "140%",
                   background:
-                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.52) 20%,rgba(147,51,234,.42) 80%,transparent 100%)",
+                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.56) 20%,rgba(147,51,234,.46) 80%,transparent 100%)",
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                 }}
@@ -156,7 +153,7 @@ function PageDiagBg({ bands = 7 }) {
                   width: "1px",
                   height: "140%",
                   background:
-                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.24) 40%,transparent 100%)",
+                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.28) 40%,transparent 100%)",
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                 }}
@@ -169,8 +166,8 @@ function PageDiagBg({ bands = 7 }) {
                   width: "9px",
                   height: "9px",
                   borderRadius: "50%",
-                  background: "rgba(192,132,252,.62)",
-                  boxShadow: "0 0 14px 4px rgba(147,51,234,.32)",
+                  background: "rgba(192,132,252,.68)",
+                  boxShadow: "0 0 14px 4px rgba(147,51,234,.4)",
                 }}
               />
             </div>
@@ -198,7 +195,7 @@ function SectionHeader({ eyebrow, title, subtitle }) {
     <div className="mb-10">
       <p
         className="text-xs font-semibold uppercase tracking-widest mb-1"
-        style={{ color: "#7c3aed" }}
+        style={{ color: "#5a2b8a" }}
       >
         {eyebrow}
       </p>
@@ -389,7 +386,7 @@ function BlogCard({ src, badge, title, excerpt, date, link }) {
           className="absolute top-3 left-3 px-3 py-1 rounded-lg text-xs font-bold"
           style={{
             background: "rgba(255,255,255,.92)",
-            color: "#a855f7",
+            color: "#5a2b8a",
             boxShadow: "0 1px 6px rgba(168,85,247,.15)",
           }}
         >
@@ -398,20 +395,20 @@ function BlogCard({ src, badge, title, excerpt, date, link }) {
         <div className="absolute inset-x-0 bottom-0 h-1/3 bg-linear-to-t from-black/20 to-transparent" />
       </div>
       <h3
-        className="text-lg font-bold mb-2 transition-colors group-hover:text-[#a855f7]"
+        className="text-lg font-bold mb-2 transition-colors group-hover:text-[#5a2b8a]"
         style={{ lineHeight: 1.3 }}
       >
         {title}
       </h3>
       <p className="text-slate-500 text-sm line-clamp-3 mb-4">{excerpt}</p>
       <div className="flex items-center justify-between">
-        <span className="text-xs font-semibold uppercase tracking-wider text-violet-600">
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#5a2b8a]">
           {date}
         </span>
         <a
           href={link}
           className="text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1"
-          style={{ color: "#a855f7" }}
+          style={{ color: "#5a2b8a" }}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -652,7 +649,7 @@ export default function Home() {
                 style={{
                   background: "rgba(220,167,242,.15)",
                   border: "0.5px solid rgba(220,167,242,.4)",
-                  color: "#7c3aed",
+                  color: "#5a2b8a",
                 }}
               />
               <div className="relative z-10">
@@ -842,7 +839,7 @@ export default function Home() {
                 style={{
                   background: "rgba(220,167,242,.15)",
                   border: "0.5px solid rgba(220,167,242,.4)",
-                  color: "#7c3aed",
+                  color: "#ffffff",
                 }}
               >
                 🛡️ Партнёр · Nomad Insurance
@@ -858,7 +855,9 @@ export default function Home() {
               >
                 Страхование
                 <br />
-                <span style={{ ...gradStyle, textShadow: "none" }}>
+                <span
+                  style={{ ...gradStyle, color: "#c084fc", textShadow: "none" }}
+                >
                   от Nomad Insurance
                 </span>
               </h2>
@@ -888,7 +887,7 @@ export default function Home() {
               />
               <p
                 className="text-sm font-semibold uppercase tracking-widest mb-3"
-                style={{ color: "#7c3aed" }}
+                style={{ color: "#5a2b8a" }}
               >
                 О страховании
               </p>
@@ -900,11 +899,11 @@ export default function Home() {
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Предлагаем как{" "}
-                <span className="font-semibold" style={{ color: "#7c3aed" }}>
+                <span className="font-semibold" style={{ color: "#5a2b8a" }}>
                   обязательное страхование
                 </span>
                 , так и{" "}
-                <span className="font-semibold" style={{ color: "#7c3aed" }}>
+                <span className="font-semibold" style={{ color: "#5a2b8a" }}>
                   добровольное медицинское страхование
                 </span>{" "}
                 для выезжающих за границу.
@@ -923,7 +922,7 @@ export default function Home() {
               />
               <p
                 className="text-sm font-semibold uppercase tracking-widest mb-3"
-                style={{ color: "#7c3aed" }}
+                style={{ color: "#5a2b8a" }}
               >
                 Почему важно
               </p>
@@ -941,7 +940,7 @@ export default function Home() {
               >
                 <p
                   className="text-sm font-semibold"
-                  style={{ color: "#7c3aed" }}
+                  style={{ color: "#5a2b8a" }}
                 >
                   Страхование — это не расход, а защита бюджета и здоровья.
                 </p>
@@ -1117,18 +1116,19 @@ export default function Home() {
           {/* how to */}
           <div className="flex gap-12 justify-center">
             <div className="shrink-0 md:top-24">
-                <VisaCalculatorButton
-                  title="Бесплатная консультация"
-                  buttonOptions={{
-                    style: {
-                      background: "linear-gradient(135deg,#dca7f2,#a855f7,#7c3aed)",
-                      boxShadow: "0 8px 32px rgba(168,85,247,.35)",
-                    },
-                    className:
-                      "text-white z-10 font-bold whitespace-nowrap px-6 md:px-8 md:py-12 py-8 text-xl cursor-pointer rounded-2xl",
-                    variant: "ghoust",
-                  }}
-                />
+              <VisaCalculatorButton
+                title="Бесплатная консультация"
+                buttonOptions={{
+                  style: {
+                    background:
+                      "linear-gradient(135deg,#dca7f2,#a855f7,#7c3aed)",
+                    boxShadow: "0 8px 32px rgba(168,85,247,.35)",
+                  },
+                  className:
+                    "text-white z-10 font-bold whitespace-nowrap px-6 md:px-8 md:py-12 py-8 text-xl cursor-pointer rounded-2xl",
+                  variant: "ghoust",
+                }}
+              />
               <div className="flex flex-col gap-1 mt-4 pl-2 w-full">
                 <div
                   className="h-[2px] w-full rounded-full"
@@ -1264,7 +1264,7 @@ export default function Home() {
               link="https://egov.kz/cms/ru/news/digital_nomad_residency"
             />
             <BlogCard
-              src={'/e.png'}
+              src={"/e.png"}
               badge="Законодательство"
               title="Правила въезда-выезда иностранных граждан"
               excerpt="Согласно действующим правилам, принимающая сторона обязана уведомить миграционную службу о прибытии иностранца в Казахстан, а также о смене места жительства. Сделать это необходимо в течение 3 рабочих дней с даты въезда иностранца...."

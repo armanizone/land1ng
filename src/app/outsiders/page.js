@@ -724,10 +724,7 @@ import { VisaCalculatorButton } from "@/components/visa-calculator/visa-calculat
 
 /* ─── design tokens (same as main visa page) ─── */
 const gradStyle = {
-  background: "linear-gradient(135deg, #c084fc 0%, #9333ea 45%, #6b21a8 100%)",
-  WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  backgroundClip: "text",
+  color: "#5a2b8a",
 };
 const accentBar = {
   background: "linear-gradient(90deg, #dca7f2, #a855f7, #7c3aed)",
@@ -792,7 +789,7 @@ function PageDiagBg({ bands = 9 }) {
                   [edge]: "-6%",
                   width: "58%",
                   height: "180%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.13) 0%,rgba(147,51,234,.09) 55%,transparent 85%)`,
+                  background: `linear-gradient(${gDir},rgba(192,132,252,.15) 0%,rgba(147,51,234,.11) 55%,transparent 85%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "64px",
@@ -805,7 +802,7 @@ function PageDiagBg({ bands = 9 }) {
                   [edge]: "4%",
                   width: "40%",
                   height: "160%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.17) 0%,rgba(147,51,234,.11) 55%,transparent 90%)`,
+                  background: `linear-gradient(${gDir},rgba(192,132,252,.19) 0%,rgba(147,51,234,.13) 55%,transparent 90%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "44px",
@@ -819,7 +816,7 @@ function PageDiagBg({ bands = 9 }) {
                   [edge]: "15%",
                   width: "24%",
                   height: "140%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.21) 0%,rgba(147,51,234,.13) 50%,transparent 85%)`,
+                  background: `linear-gradient(${gDir},rgba(192,132,252,.23) 0%,rgba(147,51,234,.15) 50%,transparent 85%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "28px",
@@ -834,7 +831,7 @@ function PageDiagBg({ bands = 9 }) {
                   width: "2px",
                   height: "140%",
                   background:
-                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.52) 20%,rgba(147,51,234,.42) 80%,transparent 100%)",
+                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.56) 20%,rgba(147,51,234,.46) 80%,transparent 100%)",
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                 }}
@@ -847,7 +844,7 @@ function PageDiagBg({ bands = 9 }) {
                   width: "1px",
                   height: "140%",
                   background:
-                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.24) 40%,transparent 100%)",
+                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.28) 40%,transparent 100%)",
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                 }}
@@ -860,8 +857,8 @@ function PageDiagBg({ bands = 9 }) {
                   width: "9px",
                   height: "9px",
                   borderRadius: "50%",
-                  background: "rgba(192,132,252,.62)",
-                  boxShadow: "0 0 14px 4px rgba(147,51,234,.32)",
+                  background: "rgba(192,132,252,.68)",
+                  boxShadow: "0 0 14px 4px rgba(147,51,234,.4)",
                 }}
               />
             </div>
@@ -878,7 +875,7 @@ function SectionHeader({ eyebrow, title, subtitle }) {
     <div className="mb-10">
       <p
         className="text-xs font-semibold uppercase tracking-widest mb-1"
-        style={{ color: "#7c3aed" }}
+        style={{ color: "#5a2b8a" }}
       >
         {eyebrow}
       </p>
@@ -893,7 +890,7 @@ function SectionHeader({ eyebrow, title, subtitle }) {
         {title}
       </h2>
       {subtitle && (
-        <p className="text-slate-500 text-sm max-w-xl">{subtitle}</p>
+        <p className="text-slate-500 max-w-xl">{subtitle}</p>
       )}
       <div className="flex items-center gap-3 mt-4">
         <div className="h-[2px] w-16 rounded-full" style={accentBar} />
@@ -1042,7 +1039,7 @@ export default function Page() {
             <span className="inline-block py-1 px-3 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">
               Ваш надежный гид в Казахстане
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-primary leading-tight mt-4">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight mt-4" style={gradStyle}>
               Миграционные услуги для иностранных граждан в Казахстане
             </h1>
             <p className="mt-4 text-lg text-slate-600">
@@ -1128,7 +1125,7 @@ export default function Page() {
               {/* text */}
               <div className="w-full md:w-7/12 p-8 md:p-12 flex flex-col justify-center">
                 <p className="text-slate-700 leading-relaxed mb-6">
-                  <span className="font-semibold" style={{ color: "#7c3aed" }}>
+                  <span className="font-semibold" style={{ color: "#5a2b8a" }}>
                     Наш визовый центр
                   </span>{" "}
                   помогает иностранным гражданам оформить документы для
@@ -1146,7 +1143,7 @@ export default function Page() {
                 >
                   <p
                     className="font-bold text-sm uppercase tracking-widest mb-4"
-                    style={{ color: "#7c3aed" }}
+                    style={{ color: "#5a2b8a" }}
                   >
                     Мы помогаем с:
                   </p>
@@ -1174,7 +1171,7 @@ export default function Page() {
 
                 <p
                   className="mt-6 font-semibold text-lg"
-                  style={{ color: "#7c3aed" }}
+                  style={{ color: "#5a2b8a" }}
                 >
                   Обращайтесь — будем рады помочь! 🤝
                 </p>
@@ -1304,6 +1301,162 @@ export default function Page() {
                 codes={null}
                 desc="Для удалённых специалистов, фрилансеров и IT-экспертов. Работа онлайн со статусом цифрового кочевника."
               />
+            </div>
+          </div>
+        </section>
+
+
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
+              eyebrow="Страховые услуги"
+              title="Страховой полис для визы"
+              subtitle="Подбор и оформление страховых полисов, соответствующих визовым требованиям консульств и визовых центров"
+            />
+ 
+            <div className="grid lg:grid-cols-3 gap-5">
+              {/* Что входит в услугу */}
+              <div
+                className="bg-white/80 backdrop-blur-sm p-7 rounded-2xl border relative overflow-hidden flex flex-col group transition-all duration-300"
+                style={{ borderColor: "rgba(220,167,242,.2)", boxShadow: cardShadow }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(220,167,242,.55)";
+                  e.currentTarget.style.boxShadow = cardShadowHover;
+                  e.currentTarget.style.transform = "translateY(-3px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(220,167,242,.2)";
+                  e.currentTarget.style.boxShadow = cardShadow;
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
+              >
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 shrink-0"
+                  style={iconBg}
+                >
+                  <ShieldCheck size={24} style={{ color: "#a855f7" }} />
+                </div>
+                <h3 className="font-bold text-lg mb-4" style={gradStyle}>
+                  Что входит в услугу
+                </h3>
+                <ul className="space-y-3 flex-1">
+                  {[
+                    "Подбор полиса, соответствующего визовым требованиям",
+                    "Покрытие медицинских расходов на весь период пребывания",
+                    "Быстрое оформление — возможна выдача в день обращения",
+                    "Подходит для подачи в визовые центры и консульства",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <div
+                        className="w-5 h-5 rounded-md flex items-center justify-center shrink-0 mt-0.5"
+                        style={iconBg}
+                      >
+                        <CheckCircle2 size={12} style={{ color: "#a855f7" }} />
+                      </div>
+                      <span className="text-slate-600 leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={accentBar}
+                />
+              </div>
+ 
+              {/* Кому подходит */}
+              <div
+                className="bg-white/80 backdrop-blur-sm p-7 rounded-2xl border relative overflow-hidden flex flex-col group transition-all duration-300"
+                style={{ borderColor: "rgba(220,167,242,.2)", boxShadow: cardShadow }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(220,167,242,.55)";
+                  e.currentTarget.style.boxShadow = cardShadowHover;
+                  e.currentTarget.style.transform = "translateY(-3px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(220,167,242,.2)";
+                  e.currentTarget.style.boxShadow = cardShadow;
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
+              >
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 shrink-0"
+                  style={iconBg}
+                >
+                  <Users size={24} style={{ color: "#a855f7" }} />
+                </div>
+                <h3 className="font-bold text-lg mb-4" style={gradStyle}>
+                  Кому подходит
+                </h3>
+                <ul className="space-y-3 flex-1">
+                  {[
+                    "Иностранным гражданам, оформляющим визу в Казахстан",
+                    "Туристам и бизнес-путешественникам",
+                    "Студентам и трудовым мигрантам",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <div
+                        className="w-5 h-5 rounded-md flex items-center justify-center shrink-0 mt-0.5"
+                        style={iconBg}
+                      >
+                        <CheckCircle2 size={12} style={{ color: "#a855f7" }} />
+                      </div>
+                      <span className="text-slate-600 leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={accentBar}
+                />
+              </div>
+ 
+              {/* Преимущества */}
+              <div
+                className="bg-white/80 backdrop-blur-sm p-7 rounded-2xl border relative overflow-hidden flex flex-col group transition-all duration-300"
+                style={{ borderColor: "rgba(220,167,242,.2)", boxShadow: cardShadow }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(220,167,242,.55)";
+                  e.currentTarget.style.boxShadow = cardShadowHover;
+                  e.currentTarget.style.transform = "translateY(-3px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(220,167,242,.2)";
+                  e.currentTarget.style.boxShadow = cardShadow;
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
+              >
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 shrink-0"
+                  style={iconBg}
+                >
+                  <BadgeCheck size={24} style={{ color: "#a855f7" }} />
+                </div>
+                <h3 className="font-bold text-lg mb-4" style={gradStyle}>
+                  Преимущества
+                </h3>
+                <ul className="space-y-3 flex-1">
+                  {[
+                    "Соответствие требованиям миграционного законодательства РК",
+                    "Минимальный пакет документов",
+                    "Надёжные страховые партнёры",
+                    "Консультация и сопровождение при оформлении",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <div
+                        className="w-5 h-5 rounded-md flex items-center justify-center shrink-0 mt-0.5"
+                        style={iconBg}
+                      >
+                        <CheckCircle2 size={12} style={{ color: "#a855f7" }} />
+                      </div>
+                      <span className="text-slate-600 leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={accentBar}
+                />
+              </div>
             </div>
           </div>
         </section>

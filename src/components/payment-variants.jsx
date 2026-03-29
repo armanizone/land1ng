@@ -2,10 +2,7 @@ import React from "react";
 import { Banknote, CreditCard, Landmark } from "lucide-react";
 
 const gradStyle = {
-  background: "linear-gradient(135deg, #c084fc 0%, #9333ea 45%, #6b21a8 100%)",
-  WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-  backgroundClip: "text",
+  color: "#5a2b8a",
 };
 const accentBar = { background: "linear-gradient(90deg, #dca7f2, #a855f7, #7c3aed)" };
 const iconBg    = { background: "linear-gradient(135deg, rgba(220,167,242,0.18), rgba(168,85,247,0.12))" };
@@ -22,7 +19,7 @@ export default function PaymentVariants() {
 
       {/* header */}
       <div className="mb-10">
-        <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: "#7c3aed" }}>
+        <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: "#5a2b8a" }}>
           Удобно для вас
         </p>
         <h2 className="font-bold tracking-tight mb-2" style={{ fontSize: "clamp(2rem,4.5vw,3.2rem)", lineHeight: 1.1, ...gradStyle }}>

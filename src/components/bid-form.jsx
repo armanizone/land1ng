@@ -9,7 +9,7 @@ export default function BidForm() {
       <div className="max-w-5xl mx-auto px-4">
         <div className="bg-white rounded-3xl overflow-hidden flex flex-col md:flex-row border border-slate-200">
           <div className="md:w-1/2 p-6 lg:p-10 bg-primary text-white">
-            <h2 className="text-4xl font-black mb-6">
+            <h2 className="text-4xl font-black mb-6 text-white">
               Оставить заявку на услугу
             </h2>
             <p className="opacity-90 mb-8">

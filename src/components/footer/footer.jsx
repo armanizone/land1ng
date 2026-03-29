@@ -72,7 +72,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="py-12 lg:mt-12 border-t border-slate-200">
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
             <div>
               <div className="text-xl font-bold text-slate-800">VISAPRO</div>
             </div>
@@ -83,20 +83,6 @@ export const Footer = () => {
             <div className="text-slate-600">
               <p className="font-semibold text-slate-800">Режим работы</p>
               <p>Онлайн 24/7</p>
-            </div>
-            <div>
-              <p className="font-semibold text-slate-800">Мы в соц.сетях</p>
-              <div className="flex space-x-3">
-                <a className="text-slate-500 hover:text-primary" href="#">
-                  <Send className="h-6 w-6" />
-                </a>
-                <a className="text-slate-500 hover:text-primary" href="#">
-                  <Send className="h-6 w-6" />
-                </a>
-                <a className="text-slate-500 hover:text-primary" href="#">
-                  <Send className="h-6 w-6" />
-                </a>
-              </div>
             </div>
           </div>
           {/* <div className="mt-8 pt-8 border-t border-slate-200 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
