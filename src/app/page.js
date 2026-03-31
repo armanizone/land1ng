@@ -598,7 +598,7 @@ export default function Home() {
             >
               <Image
                 alt="World Map"
-                src="/visa-from-kz.jpeg"
+                src="/hero.jpeg"
                 fill
                 sizes="756px"
                 style={{ objectFit: "cover" }}
