@@ -46,8 +46,8 @@ export default function Header() {
               <span>Астана</span>
             </div>
           </div>
-          <div className="hidden md:flex items-center space-x-2">
-            <div className="hidden lg:flex items-center space-x-4 text-slate-600">
+          <div className="hidden md:flex items-center space-x-2 z-50 ">
+            <div className="hidden lg:flex items-center space-x-4">
               <span>Прием заявок онлайн 24/7</span>
             </div>
             <a
@@ -97,8 +97,13 @@ export default function Header() {
             <VisaCalculatorButton
               title="Бесплатная консультация"
               buttonOptions={{
+                style: {
+                  background: "#5a2b8a",
+                  color: "#ffffff",
+                  boxShadow: "0 8px 32px rgba(168,85,247,.10)",
+                },
                 className:
-                  "text-white z-10 font-semibold hidden sm:inline-block whitespace-nowrap px-4 py-2",
+                  "text-white z-10 hidden sm:inline-block whitespace-nowrap px-4 py-2 cursor-pointer",
                 // variant: 'outline',
                 size: "lg",
               }}

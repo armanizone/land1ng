@@ -8,7 +8,13 @@ export default function BidForm() {
     <section className="w-full">
       <div className="max-w-5xl mx-auto px-4">
         <div className="bg-white rounded-3xl overflow-hidden flex flex-col md:flex-row border border-slate-200">
-          <div className="md:w-1/2 p-6 lg:p-10 bg-primary text-white">
+          <div
+            className="md:w-1/2 p-6 lg:p-10 text-white"
+            style={{
+              background:
+                "linear-gradient(135deg,#1a0a2e 0%,#2d1354 40%,#4a1a72 70%,#6b2fa0 100%)",
+            }}
+          >
             <h2 className="text-4xl font-black mb-6 text-white">
               Оставить заявку на услугу
             </h2>

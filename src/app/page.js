@@ -98,7 +98,7 @@ function PageDiagBg({ bands = 7 }) {
                   [edge]: "-6%",
                   width: "58%",
                   height: "180%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.15) 0%,rgba(147,51,234,.11) 55%,transparent 85%)`,
+                  background: `linear-gradient(${gDir},rgba(167,85,247,.24) 0%,rgba(126,34,206,.19) 55%,transparent 85%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "64px",
@@ -111,11 +111,11 @@ function PageDiagBg({ bands = 7 }) {
                   [edge]: "4%",
                   width: "40%",
                   height: "160%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.19) 0%,rgba(147,51,234,.13) 55%,transparent 90%)`,
+                  background: `linear-gradient(${gDir},rgba(167,85,247,.28) 0%,rgba(126,34,206,.22) 55%,transparent 90%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "44px",
-                  border: "1px solid rgba(192,132,252,.18)",
+                  border: "1px solid rgba(167,85,247,.28)",
                 }}
               />
               <div
@@ -125,11 +125,11 @@ function PageDiagBg({ bands = 7 }) {
                   [edge]: "15%",
                   width: "24%",
                   height: "140%",
-                  background: `linear-gradient(${gDir},rgba(192,132,252,.23) 0%,rgba(147,51,234,.15) 50%,transparent 85%)`,
+                  background: `linear-gradient(${gDir},rgba(167,85,247,.34) 0%,rgba(126,34,206,.26) 50%,transparent 85%)`,
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                   borderRadius: "28px",
-                  border: "1px solid rgba(192,132,252,.22)",
+                  border: "1px solid rgba(167,85,247,.34)",
                 }}
               />
               <div
@@ -140,7 +140,7 @@ function PageDiagBg({ bands = 7 }) {
                   width: "2px",
                   height: "140%",
                   background:
-                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.56) 20%,rgba(147,51,234,.46) 80%,transparent 100%)",
+                    "linear-gradient(180deg,transparent 0%,rgba(167,85,247,.68) 20%,rgba(126,34,206,.58) 80%,transparent 100%)",
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                 }}
@@ -153,7 +153,7 @@ function PageDiagBg({ bands = 7 }) {
                   width: "1px",
                   height: "140%",
                   background:
-                    "linear-gradient(180deg,transparent 0%,rgba(192,132,252,.28) 40%,transparent 100%)",
+                    "linear-gradient(180deg,transparent 0%,rgba(167,85,247,.42) 40%,transparent 100%)",
                   transform: `rotate(${deg})`,
                   transformOrigin: R ? "top right" : "top left",
                 }}
@@ -166,8 +166,8 @@ function PageDiagBg({ bands = 7 }) {
                   width: "9px",
                   height: "9px",
                   borderRadius: "50%",
-                  background: "rgba(192,132,252,.68)",
-                  boxShadow: "0 0 14px 4px rgba(147,51,234,.4)",
+                  background: "rgba(167,85,247,.82)",
+                  boxShadow: "0 0 16px 5px rgba(126,34,206,.54)",
                 }}
               />
             </div>
@@ -589,19 +589,21 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="lg:col-span-7 relative hidden lg:flex flex-col justify-between min-h-[380px] rounded-3xl overflow-hidden p-6"
-              style={{
-                background:
-                  "linear-gradient(135deg,#1a0a2e 0%,#2d1354 40%,#4a1a72 70%,#6b2fa0 100%)",
-                boxShadow: "0 8px 40px rgba(168,85,247,.22)",
-              }}
+              className="lg:col-span-7 relative  lg:flex flex-col justify-between min-h-[250px] md:min-h-[380px] rounded-3xl overflow-hidden p-6"
+              style={{}}
             >
               <Image
                 alt="World Map"
                 src="/hero.jpeg"
                 fill
-                sizes="756px"
-                style={{ objectFit: "cover" }}
+                // sizes="756px"
+                style={{
+                  objectPosition: "center",
+                  background:
+                    "linear-gradient(135deg,#1a0a2e 0%,#2d1354 40%,#4a1a72 70%,#6b2fa0 100%)",
+                  boxShadow: "0 8px 40px rgba(168,85,247,.22)",
+                }}
+                className="object-contain sm:object-cover object-center"
                 priority
               />
               <svg
@@ -652,7 +654,7 @@ export default function Home() {
                   color: "#5a2b8a",
                 }}
               />
-              <div className="relative z-10">
+              <div className="hidden sm:block relative z-10">
                 <h3
                   className="font-bold mb-2"
                   style={{
